@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="../assests/libs/glightbox-3.3.0 (1)/glightbox-3.3.0/dist/css/glightbox.min.css" />
+        <link href="./output.css" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    </head>
+
+    <body>
+        <!-- header start  -->
+        <header
+            class="px-5 md:px-8 lg:px-16 fixed z-[99] top-0 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap w-full text-sm">
+            <nav
+                class="mt-4 relative max-w-7xl w-full bg-white border border-gray-200 rounded-[2rem] py-2.5 md:flex md:items-center md:justify-between md:py-1.5 md:px-4 md:mx-auto">
+                <div class="px-4 flex justify-between items-center">
+                    <!-- Logo -->
+                    <div>
+                        <a
+                            class="h-8 md:h-10 flex-none rounded-md text-xl inline-block font-semibold focus:outline-none focus:opacity-80"
+                            href="./index.html"
+                            aria-label="Preline">
+                            <img src="../assests/img/skyLogo.png" alt
+                                class="size-full" />
+                        </a>
+                    </div>
+                    <!-- End Logo -->
+
+                    <div class="md:hidden">
+                        <!-- Toggle Button -->
+                        <div class="flex lg:hidden">
+                            <label
+                                for="sideToggle"
+                                class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-black group-[]/nav:text-black">
+                                <span class="sr-only">Open menu</span>
+                                <svg
+                                    class="size-7"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    aria-hidden="true">
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
+                                </svg>
+                            </label>
+                        </div>
+                        <!-- End Toggle Button -->
+                    </div>
+                </div>
+
+                <div
+                    id="hs-navbar-header-floating"
+                    class="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow md:block"
+                    aria-labelledby="hs-navbar-header-floating-collapse">
+                    <div
+                        class="flex flex-col md:flex-row md:items-center md:justify-end gap-2 md:gap-3 mt-3 md:mt-0 py-2 md:py-0 md:ps-7">
+                        <a
+                            class="px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 text-base font-bold text-gray-500 border-transparent focus:outline-none"
+                            href="./index.html"
+                            aria-current="page">Home</a>
+                        <a
+                            class="px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 text-base font-bold border-transparent text-gray-500 hover:text-gray-800 focus:outline-none"
+                            href="./about.html">About</a>
+                        <a
+                            class="px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 text-base font-bold border-gray-800 text-gray-800 hover:text-gray-800 focus:outline-none"
+                            href="./project.html">Projects</a>
+                        <a
+                            class="px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 text-base font-bold border-gray-800 border-transparent text-gray-500 hover:text-gray-800 focus:outline-none"
+                            href="./careers.html">Careers</a>
+                        <a
+                            class="px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 text-base font-bold border-transparent text-gray-500 hover:text-gray-800 focus:outline-none"
+                            href="./contact.html">Contact Us</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- header end  -->
+
+        <!-- hero section start -->
+        <section
+            class="h-[calc(100vh-70px)] bg-cover bg-no-repeat bg-top bg-[url(../assests/img/krishinaHome.jpeg)] relative before:absolute before:size-full before:inset-0 before:bg-black/30">
+            <div class="mx-auto max-w-7xl px-6 lg:px-8 w-full h-full">
+                <div class="h-full flex flex-col justify-center relative z-10">
+                    <ul class="flex items-center gap-2">
+                        <li>
+                            <a href="./index.html"
+                                class="text-theme1 font-bold">Home</a>
+                        </li>
+                        <li class="text-white font-semibold">/</li>
+                        <li>
+                            <a href="./project.html"
+                                class="text-theme1 font-bold">Projects</a>
+                        </li>
+                        <li class="text-white font-semibold">/</li>
+                        <li class="text-white font-semibold">Project
+                            Details</li>
+                    </ul>
+                    <div
+                        class="w-full sm:max-w-xl text-4xl sm:text-5xl md:text-6xl text-white pt-5 leading-[130%]">
+                        Explore Prime Plots In Krishna City
+                        <div
+                            class="w-1/2 sm:w-[20%] h-[2px] bg-white mt-5"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- hero section Ends -->
+
+        <!-- project Detail section start -->
+        <section class="mx-auto max-w-7xl px-6 lg:px-8 w-full py-10 md:py-16">
+            <div class="grid grid-cols-1 md:grid-cols-7 lg:grid-cols-3 gap-8">
+
+                <div class="col-span-1 md:col-span-4 lg:col-span-2">
+
+                    <div class="text-3xl sm:text-4xl font-bold">
+                        Explore Prime Plots for Sale near NH 48, Jaipur-Delhi Highway, Kotputli
+                    </div>
+
+                    <div class="mt-6 sm:mt-10">
+                        <div
+                            class="my-5 sm:my-8 ms-3 text-2xl font-semibold relative uppercase before:absolute before:top-1 before:left-0 before:bg-theme1 before:h-[90%] before:w-[3px] before:-ms-3">
+                            Overview
+                        </div>
+                        <div class="text-gray-500 text-base sm:text-lg !leading-[160%]">
+                            Explore premium villa plots at Krishna City, one of the most rapidly growing locations near NH 48, Jaipur-Delhi Highway, Kotputli. With a range of investment options and proximity to major corporate hubs, this area offers excellent employment opportunities, driving a surge in demand for high-quality plots. Secure your investment in this prime location today!
+                        </div>
+                    </div>
+
+                    <div class="py-6 sm:py-10">
+                        <div class="grid sm:grid-cols-2 gap-5 items-stretch">
+                            <div class="grid grid-cols-2 gap-5">
+                                <div
+                                    class="aspect-[2/2.5] rounded-lg overflow-hidden shadow-2xl">
+                                    <a class="GLightbox glightImg gallary"
+                                        href="../assests/img/krishinaCity.jpeg">
+                                        <img
+                                            class="size-full object-cover object-center"
+                                            src="../assests/img/krishinaCity.jpeg"
+                                            alt>
+                                    </a>
+                                </div>
+                                <div
+                                    class="aspect-[2/2.5] rounded-lg overflow-hidden shadow-2xl">
+                                    <a class="GLightbox glightImg gallary"
+                                        href="../assests/img/krishinaCity02.jpeg">
+                                        <img
+                                            class="size-full object-cover object-center"
+                                            src="../assests/img/krishinaCity02.jpeg"
+                                            alt>
+                                    </a>
+                                </div>
+                                <div class="col-span-2">
+                                    <div
+                                        class="aspect-[2/1] rounded-lg overflow-hidden shadow-2xl">
+                                        <a class="GLightbox glightImg gallary"
+                                            href="../assests/img/krishinaCity03.jpeg">
+                                            <img
+                                                class="size-full object-cover object-center"
+                                                src="../assests/img/krishinaCity03.jpeg"
+                                                alt>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rounded-lg overflow-hidden shadow-2xl">
+                                <a class="GLightbox glightImg gallary"
+                                    href="../assests/img/krishinaCity04.jpeg">
+                                    <img
+                                        class="size-full object-cover object-center"
+                                        src="../assests/img/krishinaCity04.jpeg"
+                                        alt>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 sm:mt-10">
+                        <div
+                            class="my-5 sm:my-8 ms-3 text-2xl font-semibold relative uppercase before:absolute before:top-1 before:left-0 before:bg-theme1 before:h-[90%] before:w-[3px] before:-ms-3">
+                            ABOUT Krishna City
+                        </div>
+                        <div class="text-gray-500 text-base sm:text-lg !leading-[160%]">
+                            Krishna City, located near NH 48, Jaipur-Delhi Highway, Kotputli, presents a great opportunity to invest in prime plots with excellent growth potential. Sri Sainathapuram, situated near Nellikuppam Road in Kalvoy village, connects the major roads of GST and OMR, making it a high-demand area for real estate. The strategic location ensures strong land appreciation, offering investors a valuable opportunity.
+                        </div>
+                        <div class="text-gray-500 text-base sm:text-lg !leading-[160%] pt-5">
+                            This fully secured gated community features well-paved roads, lush parks, and avenue trees, providing an ideal environment for independent homes. Krishna City is designed for those seeking a serene and comfortable lifestyle, with essential amenities like bus stands, railway stations, markets, schools, and colleges nearby to ensure convenience.
+                        </div>
+                        <div class="text-gray-500 text-base sm:text-lg !leading-[160%] pt-5">
+                            With upcoming infrastructure developments and increasing demand, Krishna City’s residential plots are rapidly rising in value. Now is the perfect time to invest in this thriving location and secure your future in a prime area!
+                        </div>
+                    </div>
+
+                    <div class="mt-6 sm:mt-10">
+                        <div
+                            class="my-5 sm:my-8 ms-3 text-2xl font-semibold relative uppercase before:absolute before:top-1 before:left-0 before:bg-theme1 before:h-[90%] before:w-[3px] before:-ms-3">
+                            Amenities
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <div
+                                class="bg-white shadow-xl rounded-xl py-8 px-12 group hover:bg-theme2 transition-all duration-300">
+                                <div
+                                    class="mx-auto rounded-full overflow-hidden bg-pink-50 size-20 p-3">
+                                    <img
+                                        src="../assests/img/road.webp"
+                                        alt
+                                        class="size-full object-cover" />
+                                </div>
+                                <div
+                                    class="text-lg font-bold text-center text-theme2 mt-5 group-hover:text-theme1 transition-all duration-300">
+                                    Black Top Road
+                                </div>
+                            </div>
+                            <div
+                                class="bg-white shadow-xl rounded-xl py-8 px-12 group hover:bg-theme2 transition-all duration-300">
+                                <div
+                                    class="mx-auto rounded-full overflow-hidden bg-pink-50 size-20 p-3">
+                                    <img
+                                        src="../assests/img/gate.webp"
+                                        alt
+                                        class="size-full object-cover" />
+                                </div>
+                                <div
+                                    class="text-lg font-bold text-center text-theme2 mt-5 group-hover:text-theme1 transition-all duration-300">
+                                    Secure Gated Development
+                                </div>
+                            </div>
+                            <div
+                                class="bg-white shadow-xl rounded-xl py-8 px-12 group hover:bg-theme2 transition-all duration-300">
+                                <div
+                                    class="mx-auto rounded-full overflow-hidden bg-pink-50 size-20 p-3">
+                                    <img
+                                        src="../assests/img/surplus.webp"
+                                        alt
+                                        class="size-full object-cover" />
+                                </div>
+                                <div
+                                    class="text-lg font-bold text-center text-theme2 mt-5 group-hover:text-theme1 transition-all duration-300">
+                                    Surplus Water
+                                </div>
+                            </div>
+                            <div
+                                class="bg-white shadow-xl rounded-xl py-8 px-12 group hover:bg-theme2 transition-all duration-300">
+                                <div
+                                    class="mx-auto rounded-full overflow-hidden bg-pink-50 size-20 p-3">
+                                    <img
+                                        src="../assests/img/park.webp"
+                                        alt
+                                        class="size-full object-cover" />
+                                </div>
+                                <div
+                                    class="text-lg font-bold text-center text-theme2 mt-5 group-hover:text-theme1 transition-all duration-300">
+                                    Spacious Park
+                                </div>
+                            </div>
+                            <div
+                                class="bg-white shadow-xl rounded-xl py-8 px-12 group hover:bg-theme2 transition-all duration-300">
+                                <div
+                                    class="mx-auto rounded-full overflow-hidden bg-pink-50 size-20 p-3">
+                                    <img
+                                        src="../assests/img/tree.webp"
+                                        alt
+                                        class="size-full object-cover" />
+                                </div>
+                                <div
+                                    class="text-lg font-bold text-center text-theme2 mt-5 group-hover:text-theme1 transition-all duration-300">
+                                    Avenue Trees
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 sm:mt-10">
+                        <div
+                            class="my-5 sm:my-8 ms-3 text-2xl font-semibold relative uppercase before:absolute before:top-1 before:left-0 before:bg-theme1 before:h-[90%] before:w-[3px] before:-ms-3">
+                            Location
+                        </div>
+                        <div class="mt-4 h-96">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14250.21292695114!2d75.7938309!3d26.7586296!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dcbd5b803578d%3A0xcf04bcedcb3835fc!2skrishna%20city%20jaipur!5e0!3m2!1sen!2sin!4v1727354730986!5m2!1sen!2sin"
+                                class="size-full"
+                                style="border: 0"
+                                allowfullscreen
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 sm:mt-10">
+                        <div
+                            class="my-5 sm:my-8 ms-3 text-2xl font-semibold relative uppercase before:absolute before:top-1 before:left-0 before:bg-theme1 before:h-[90%] before:w-[3px] before:-ms-3">
+                            LOCATION ADVANTAGES
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                            <div
+                                class="bg-white shadow-xl rounded-xl py-8 px-12 group hover:bg-theme2 transition-all duration-300">
+                                <div
+                                    class="mx-auto rounded-full overflow-hidden bg-pink-50 size-20 p-3">
+                                    <img
+                                        src="../assests/img/school.webp"
+                                        alt
+                                        class="size-full object-cover" />
+                                </div>
+                                <div
+                                    class="text-lg font-bold text-center text-theme2 mt-5 group-hover:text-theme1 transition-all duration-300">
+                                    30 Minutes Drive to School
+                                </div>
+                            </div>
+                            <div
+                                class="bg-white shadow-xl rounded-xl py-8 px-12 group hover:bg-theme2 transition-all duration-300">
+                                <div
+                                    class="mx-auto rounded-full overflow-hidden bg-pink-50 size-20 p-3">
+                                    <img
+                                        src="../assests/img/hospital.webp"
+                                        alt
+                                        class="size-full object-cover" />
+                                </div>
+                                <div
+                                    class="text-lg font-bold text-center text-theme2 mt-5 group-hover:text-theme1 transition-all duration-300">
+                                    Close To Hospital
+                                </div>
+                            </div>
+                            <div
+                                class="bg-white shadow-xl rounded-xl py-8 px-12 group hover:bg-theme2 transition-all duration-300">
+                                <div
+                                    class="mx-auto rounded-full overflow-hidden bg-pink-50 size-20 p-3">
+                                    <img
+                                        src="../assests/img/bus-stop.webp"
+                                        alt
+                                        class="size-full object-cover" />
+                                </div>
+                                <div
+                                    class="text-lg font-bold text-center text-theme2 mt-5 group-hover:text-theme1 transition-all duration-300">
+                                    Close To Bus Stop
+                                </div>
+                            </div>
+                            <div
+                                class="bg-white shadow-xl rounded-xl py-8 px-12 group hover:bg-theme2 transition-all duration-300">
+                                <div
+                                    class="mx-auto rounded-full overflow-hidden bg-pink-50 size-20 p-3">
+                                    <img
+                                        src="../assests/img/train.webp"
+                                        alt
+                                        class="size-full object-cover" />
+                                </div>
+                                <div
+                                    class="text-lg font-bold text-center text-theme2 mt-5 group-hover:text-theme1 transition-all duration-300">
+                                    Close To Railway Station
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-6 sm:mt-10">
+                        <div
+                            class="my-5 sm:my-8 ms-3 text-2xl font-semibold relative uppercase before:absolute before:top-1 before:left-0 before:bg-theme1 before:h-[90%] before:w-[3px] before:-ms-3">
+                            Video
+                        </div>
+                        <div
+                            class="mt-5 aspect-[3/1.5] rounded-xl bg-white flex items-center justify-center shadow-2xl bg-[url(../assests/img/krishinaCity05.jpeg)] bg-cover bg-no-repeat">
+                            <div class="rounded-full bg-white size-16">
+                                <a
+                                    href="../assests/img/atulyam.mp4"
+                                    class="glightbox3 flex items-center justify-center size-full *:size-5 text-black">
+                                    <svg
+                                        stroke="currentColor"
+                                        fill="currentColor"
+                                        stroke-width="0"
+                                        viewBox="0 0 384 512"
+                                        height="100%"
+                                        width="100%"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-span-1 md:col-span-3 lg:col-span-1">
+
+                    <div class="enquiry-form p-5 border rounded-md">
+                        <div
+                            class="mb-6 ms-3 text-2xl font-semibold relative uppercase before:absolute before:top-1 before:left-0 before:bg-theme1 before:h-[90%] before:w-[3px] before:-ms-3">
+                            Enquiry US
+                        </div>
+                        <div class="flex flex-col gap-4">
+                            <div class="h-10 w-full">
+                                <input
+                                    class="w-full ps-4 h-full border rounded-md focus-visible:outline-0 focus-visible:border-theme2 placeholder:text-sm placeholder:text-slate-500"
+                                    type="text"
+                                    placeholder="Your Name*" />
+                            </div>
+                            <div class="h-10 w-full">
+                                <input
+                                    class="w-full border rounded-md h-full ps-4 focus-visible:outline-0 focus-visible:border-theme2 placeholder:text-sm placeholder:text-slate-500"
+                                    type="text"
+                                    placeholder="Your E-mail" />
+                            </div>
+                            <div class="h-10 w-full">
+                                <input
+                                    class="w-full border rounded-md h-full ps-4 focus-visible:outline-0 focus-visible:border-theme2 placeholder:text-sm placeholder:text-slate-500"
+                                    type="tel"
+                                    placeholder="Contact Number*" />
+                            </div>
+                            <div class="h-10 w-full">
+                                <input
+                                    class="w-full border rounded-md h-full ps-4 focus-visible:outline-0 focus-visible:border-theme2 placeholder:text-sm placeholder:text-slate-500"
+                                    type="text"
+                                    placeholder="Address" />
+                            </div>
+                            <div class>
+                                <textarea
+                                    class="border rounded-md ps-4 w-full placeholder:text-sm placeholder:text-slate-500 pt-5 focus-visible:outline-theme2"
+                                    rows="4"
+                                    name
+                                    id
+                                    placeholder="Write message.."></textarea>
+                            </div>
+                            <div class="pt-4 mx-auto">
+                                <a
+                                    href="javascript:;"
+                                    class="px-4 inline-block rounded-md text-sm md:text-base text-black font-semibold py-2 border-black border w-fit before:-z-10 relative before:absolute before:w-full before:h-0 before:left-0 before:top-1/2 before:bg-theme2 before:md:hover:h-full before:duration-300 md:hover:text-white duration-300 before:md:hover:top-0">
+                                    Send Message
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projects p-5 border rounded-md mt-10">
+                        <div
+                            class="mb-6 ms-3 text-2xl font-semibold relative uppercase before:absolute before:top-1 before:left-0 before:bg-theme1 before:h-[90%] before:w-[3px] before:-ms-3">
+                            Projects
+                        </div>
+                        <!-- Swiper -->
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide p-2 lg:p-5">
+                                    <div
+                                        class="size-full p-3 pb-5 shadow-xl rounded-lg">
+                                        <div class="aspect-[1/0.8]">
+                                            <a
+                                                href="javascript:;"
+                                                class="inline-block h-full w-full overflow-hidden">
+                                                <img
+                                                    class="size-full object-cover hover:scale-105 duration-300 transition-all ease-in-out"
+                                                    src="../assests/img/krishinaCity.jpeg"
+                                                    alt />
+                                            </a>
+                                        </div>
+                                        <div class>
+                                            <div
+                                                class="text-sm py-3 font-semibold text-theme1">
+                                                Plot Area: 1190 to 2813 sq.ft.,
+                                            </div>
+                                            <div
+                                                class="text-lg font-semibold pb-4 text-theme2">
+                                                <a href="javascript:;">Walajabad
+                                                    - Tammanur</a>
+                                            </div>
+                                            <ul
+                                                class="text-xs font-semibold text-slate-500">
+                                                <li><span>Location: </span>
+                                                    Walajabad</li>
+                                                <li class="py-3"><span>Name :
+                                                    </span>Sri Sai Garden</li>
+                                                <li>
+                                                    <span>Approval No :</span>
+                                                    DTCP No. 28/2007 &
+                                                    138/2007
+                                                </li>
+                                            </ul>
+                                            <div class="pt-4 w-fit mx-auto">
+                                                <a
+                                                    href="javascript:;"
+                                                    class="px-3 inline-block rounded-md text-sm text-black font-semibold py-1.5 border-black border w-fit before:-z-10 relative before:absolute before:w-full before:h-0 before:left-0 before:top-1/2 before:bg-theme2 before:md:hover:h-full before:duration-300 md:hover:text-white duration-300 before:md:hover:top-0">
+                                                    Send Message
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide p-2 lg:p-5">
+                                    <div
+                                        class="size-full p-3 pb-5 shadow-xl rounded-lg">
+                                        <div class="aspect-[1/0.8]">
+                                            <a
+                                                href="javascript:;"
+                                                class="inline-block h-full w-full overflow-hidden">
+                                                <img
+                                                    class="size-full object-cover hover:scale-105 duration-300 transition-all ease-in-out"
+                                                    src="../assests/img/shreeShyam01.jpeg"
+                                                    alt />
+                                            </a>
+                                        </div>
+                                        <div class>
+                                            <div
+                                                class="text-sm py-3 font-semibold text-theme1">
+                                                Plot Area: 1190 to 2813 sq.ft.,
+                                            </div>
+                                            <div
+                                                class="text-lg font-semibold pb-4 text-theme2">
+                                                <a href="javascript:;">Walajabad
+                                                    - Tammanur</a>
+                                            </div>
+                                            <ul
+                                                class="text-xs font-semibold text-slate-500">
+                                                <li><span>Location: </span>
+                                                    Walajabad</li>
+                                                <li class="py-3"><span>Name :
+                                                    </span>Sri Sai Garden</li>
+                                                <li>
+                                                    <span>Approval No :</span>
+                                                    DTCP No. 28/2007 &
+                                                    138/2007
+                                                </li>
+                                            </ul>
+                                            <div class="pt-4 w-fit mx-auto">
+                                                <a
+                                                    href="javascript:;"
+                                                    class="px-3 inline-block rounded-md text-sm text-black font-semibold py-1.5 border-black border w-fit before:-z-10 relative before:absolute before:w-full before:h-0 before:left-0 before:top-1/2 before:bg-theme2 before:md:hover:h-full before:duration-300 md:hover:text-white duration-300 before:md:hover:top-0">
+                                                    Send Message
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide p-2 lg:p-5">
+                                    <div
+                                        class="size-full p-3 pb-5 shadow-xl rounded-lg">
+                                        <div class="aspect-[1/0.8]">
+                                            <a
+                                                href="javascript:;"
+                                                class="inline-block h-full w-full overflow-hidden">
+                                                <img
+                                                    class="size-full object-cover hover:scale-105 duration-300 transition-all ease-in-out"
+                                                    src="../assests/img/skyAngan.jpg"
+                                                    alt />
+                                            </a>
+                                        </div>
+                                        <div class>
+                                            <div
+                                                class="text-sm py-3 font-semibold text-theme1">
+                                                Plot Area: 1190 to 2813 sq.ft.,
+                                            </div>
+                                            <div
+                                                class="text-lg font-semibold pb-4 text-theme2">
+                                                <a href="javascript:;">Walajabad
+                                                    - Tammanur</a>
+                                            </div>
+                                            <ul
+                                                class="text-xs font-semibold text-slate-500">
+                                                <li><span>Location: </span>
+                                                    Walajabad</li>
+                                                <li class="py-3"><span>Name :
+                                                    </span>Sri Sai Garden</li>
+                                                <li>
+                                                    <span>Approval No :</span>
+                                                    DTCP No. 28/2007 &
+                                                    138/2007
+                                                </li>
+                                            </ul>
+                                            <div class="pt-4 w-fit mx-auto">
+                                                <a
+                                                    href="javascript:;"
+                                                    class="px-3 inline-block rounded-md text-sm text-black font-semibold py-1.5 border-black border w-fit before:-z-10 relative before:absolute before:w-full before:h-0 before:left-0 before:top-1/2 before:bg-theme2 before:md:hover:h-full before:duration-300 md:hover:text-white duration-300 before:md:hover:top-0">
+                                                    Send Message
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="swiper-pagination z-40 !w-full !-bottom-1   [&_.swiper-pagination-bullet]:h-1 [&_.swiper-pagination-bullet]:w-3 [&_.swiper-pagination-bullet]:md:w-6 [&_.swiper-pagination-bullet-active]:!w-6 [&_.swiper-pagination-bullet-active]:md:!w-10 [&_.swiper-pagination-bullet]:rounded-md [&_.swiper-pagination-bullet-active]:!bg-theme1 [&_.swiper-pagination-bullet]:bg-theme2 [&_.swiper-pagination-bullet]:opacity-100 swiper-pagination-bullets swiper-pagination-horizontal">
+                                <span
+                                    class="swiper-pagination-bullet swiper-pagination-bullet-active"
+                                    aria-current="true"></span>
+                                <span class="swiper-pagination-bullet"> </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="border p-5 sm:p-8 my-5 rounded-md">
+                        <div
+                            class="mb-6 ms-3 text-2xl font-semibold relative uppercase before:absolute before:top-1 before:left-0 before:bg-theme1 before:h-[90%] before:w-[3px] before:-ms-3">
+                            Brochure
+                        </div>
+                        <div class="pt-4 w-fit mx-auto">
+                            <a
+                                href="../assests/img/KRISHNA CITY  & CENTER-Model 2.pdf" download
+                                class="px-8 inline-flex items-center gap-2 rounded-md text-sm text-black font-semibold py-2.5 border-black border w-fit before:-z-10 relative before:absolute before:w-full before:h-0 before:left-0 before:top-1/2 before:bg-theme2 before:md:hover:h-full before:duration-300 md:hover:text-white duration-300 before:md:hover:top-0">
+                                Download
+                                <span class="size-5 inline-block">
+                                    <svg class="size-full" stroke="currentColor"
+                                        fill="none" stroke-width="2"
+                                        viewBox="0 0 24 24" aria-hidden="true"
+                                        xmlns="http://www.w3.org/2000/svg"><path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"></path></svg>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="border p-5 sm:p-8 my-5 rounded-md">
+                        <div
+                            class="mb-6 ms-3 text-2xl font-semibold relative uppercase before:absolute before:top-1 before:left-0 before:bg-theme1 before:h-[90%] before:w-[3px] before:-ms-3">
+                            Maps
+                        </div>
+
+                        <div class="pt-4 w-fit mx-auto">
+                            <div class="rounded-lg overflow-hidden shadow-2xl">
+                                <a class="GLightbox glightImg gallary"
+                                    href="../assests/img/KRISHNA CITY  & CENTER-Model 2.pdf" target="_blank">
+                                    <img
+                                        class="size-full object-cover object-center"
+                                        src="../assests/img/gallary04.jpg"
+                                        alt>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- project Detail section Ends -->
+
+        <!-- footer start -->
+        <footer class="mt-auto bg-gray-900 w-full">
+            <div
+                class="mt-auto max-2xl:max-w-7xl 2xl:px-24 3xl:px-36 px-6 lg:px-8 w-full py-6 lg:pt-20 mx-auto">
+                <div
+                    class="grid grid-cols-3 sm:grid-cols-6 md:grid-cols-12 gap-6">
+                    <div class="col-span-3">
+                        <a
+                            class="[filter:contrast(0)brightness(2)] flex-none inline-block 3xl:max-w-60 2xl:max-w-50 max-w-40 text-xl font-semibold text-white focus:outline-none focus:opacity-80"
+                            href="./index.html"
+                            aria-label="Brand">
+                            <img
+                                src="../assests/img/skyLogo.png"
+                                alt="logo"
+                                class="w-full h-full" />
+                        </a>
+                        <div class>
+                            <p class="text-white text-base">A Unit of Homkar
+                                Homes LLB</p>
+                            <p
+                                class="text-gray-400 text-base 2xl:text-lg 3xl:text-2xl py-5">
+                                A company that offers perfect land for your
+                                requirements. Sky
+                                Home was established in 2006 in Kotputli and now
+                                proudly serves
+                                people throughout Rajasthan.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-span-3 md:mx-auto">
+                        <h4
+                            class="font-semibold text-gray-100 text-base 2xl:text-lg 3xl:text-2xl">
+                            Company
+                        </h4>
+
+                        <div class="mt-3 grid space-y-3">
+                            <p>
+                                <a
+                                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
+                                    href="./about.html">About Sky Homes</a>
+                            </p>
+                            <p>
+                                <a
+                                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
+                                    href="./project.html">Projects</a>
+                            </p>
+                            <p>
+                                <a
+                                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
+                                    href="./careers.html">Careers</a>
+                                <span
+                                    class="inline-block ms-1 text-[10px] bg-theme2 text-white py-1 px-1.5 rounded-md">We're
+                                    hiring</span>
+                            </p>
+                            <p>
+                                <a
+                                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
+                                    href="./contact.html">Contact Us</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-span-3 md:mx-auto">
+                        <h4
+                            class="font-semibold text-gray-100 text-base 2xl:text-lg 3xl:text-2xl">
+                            Projects
+                        </h4>
+
+                        <div class="mt-3 grid space-y-3">
+                            <p>
+                                <a
+                                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
+                                    href="javascript:;">Om Nagar</a>
+                            </p>
+                            <p>
+                                <a
+                                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
+                                    href="javascript:;">Keshargarh</a>
+                            </p>
+                            <p>
+                                <a
+                                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
+                                    href="javascript:;">Sky Aangan</a>
+                            </p>
+                            <p>
+                                <a
+                                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
+                                    href="javascript:;">Krishna City</a>
+                            </p>
+                            <p>
+                                <a
+                                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
+                                    href="javascript:;">Bhagwati Vihar</a>
+                            </p>
+                            <p>
+                                <a
+                                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
+                                    href="javascript:;">Shyam Vatika</a>
+                            </p>
+                            <p>
+                                <a
+                                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
+                                    href="javascript:;">ATULYAM</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-span-3">
+                        <h4
+                            class="font-semibold text-gray-100 text-base 2xl:text-lg 3xl:text-2xl">
+                            Social Media
+                        </h4>
+                        <p
+                            class="text-gray-400 text-base 2xl:text-lg 3xl:text-2xl py-5">
+                            Don't miss out—follow us on our social networks
+                        </p>
+                        <div
+                            class="w-full flex flex-wrap items-center gap-2 pt-3">
+                            <a
+                                href="javascript:;"
+                                class="inline-flex group/social justify-center items-center bg-white mx-[5px] text-center relative overflow-hidden rounded-lg shadow-xl shadow-white/20 border-[3px] border-white duration-300 w-10 md:w-12 h-10 md:h-10 text-base before:bg-rose-500 before:w-[136%] before:h-[133%] before:absolute before:[transform:rotate(45deg)] before:top-[90%] before:-left-[110%] before:duration-300 text-rose-500 p-2 lg:p-3 2xl:p-2 hover:before:-top-[16%] hover:before:-left-[16%] before:ease-[cubic-bezier(0.31,-0.105,0.43,1.59)]">
+                                <svg
+                                    class="size-full group-hover/social:text-white group-hover/social:scale-100 scale-95 duration-300"
+                                    stroke="currentColor"
+                                    fill="currentColor"
+                                    stroke-width="0"
+                                    viewBox="0 0 448 512"
+                                    height="200px"
+                                    width="200px"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path>
+                                </svg>
+                            </a>
+                            <a
+                                href="javascript:;"
+                                class="inline-flex group/social justify-center items-center bg-white mx-[5px] text-center relative overflow-hidden rounded-lg shadow-xl shadow-white/20 border-[3px] border-white duration-300 w-10 md:w-12 h-10 md:h-10 text-base before:bg-blue-900 before:w-[136%] before:h-[133%] before:absolute before:[transform:rotate(45deg)] before:top-[90%] before:-left-[110%] before:duration-300 text-blue-900 p-2 lg:p-3 2xl:p-2 hover:before:-top-[16%] hover:before:-left-[16%] before:ease-[cubic-bezier(0.31,-0.105,0.43,1.59)]">
+                                <svg
+                                    class="size-full group-hover/social:text-white group-hover/social:scale-100 scale-95 duration-300"
+                                    stroke="currentColor"
+                                    fill="currentColor"
+                                    stroke-width="0"
+                                    viewBox="0 0 320 512"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path>
+                                </svg>
+                            </a>
+                            <a
+                                href="javascript:;"
+                                class="inline-flex group/social justify-center items-center bg-white mx-[5px] text-center relative overflow-hidden rounded-lg shadow-xl shadow-white/20 border-[3px] border-white duration-300 w-10 md:w-12 h-10 md:h-10 text-base before:bg-black before:w-[136%] before:h-[133%] before:absolute before:[transform:rotate(45deg)] before:top-[90%] before:-left-[110%] before:duration-300 text-black p-2 lg:p-3 2xl:p-2 hover:before:-top-[16%] hover:before:-left-[16%] before:ease-[cubic-bezier(0.31,-0.105,0.43,1.59)]">
+                                <svg
+                                    class="size-full group-hover/social:text-white group-hover/social:scale-100 scale-95 duration-300"
+                                    stroke="currentColor"
+                                    fill="currentColor"
+                                    stroke-width="0"
+                                    viewBox="0 0 512 512"
+                                    height="200px"
+                                    width="200px"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path>
+                                </svg>
+                            </a>
+                            <a
+                                href="javascript:;"
+                                class="inline-flex group/social justify-center items-center bg-white mx-[5px] text-center relative overflow-hidden rounded-lg shadow-xl shadow-white/20 border-[3px] border-white duration-300 w-10 md:w-12 h-10 md:h-10 text-base before:bg-red-700 before:w-[136%] before:h-[133%] before:absolute before:[transform:rotate(45deg)] before:top-[90%] before:-left-[110%] before:duration-300 text-red-700 p-2 lg:p-3 2xl:p-2 hover:before:-top-[16%] hover:before:-left-[16%] before:ease-[cubic-bezier(0.31,-0.105,0.43,1.59)]">
+                                <svg
+                                    class="size-full group-hover/social:text-white group-hover/social:scale-100 scale-95 duration-300"
+                                    stroke="currentColor"
+                                    fill="currentColor"
+                                    stroke-width="0"
+                                    viewBox="0 0 576 512"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="mt-6 sm:mt-12 flex justify-center items-center border-t border-gray-600">
+                    <p
+                        class="text-sm 2xl:text-base 3xl:text-xl pt-6 text-gray-200">
+                        ©2024 Homkar Homes LLB. All Rights Reserved
+                    </p>
+                </div>
+            </div>
+        </footer>
+        <!-- footer Ends -->
+
+        <!-- side bar  -->
+        <input
+            type="checkbox"
+            class="peer/sideToggle hidden"
+            name="sideToggle"
+            id="sideToggle" />
+        <label
+            for="sideToggle"
+            class="fixed inset-0 -z-[1011] backdrop-blur-xl bg-sky-950/10 peer-checked/sideToggle:z-[1010] peer-checked/sideToggle:opacity-100 opacity-0 duration-100"></label>
+
+        <div
+            class="fixed flex flex-col h-screen inset-y-0 right-0 z-[1011] w-full overflow-y-auto bg-black/80 select-none text-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 peer-checked/sideToggle:translate-x-0 peer-checked/sideToggle:opacity-100 translate-x-full opacity-0 duration-300">
+            <div class="flex items-center justify-between">
+                <a href class="-ml-1.5">
+                    <span class="sr-only">Sky Home</span>
+                    <img
+                        class="h-7 w-auto invert"
+                        width="174"
+                        height="48"
+                        src="../assests/img/skyLogo.png"
+                        alt=" Logo" />
+                </a>
+                <label
+                    for="sideToggle"
+                    type="button"
+                    class="-m-2.5 rounded-md p-2.5 text-gray-200">
+                    <span class="sr-only">Close menu</span>
+                    <svg
+                        class="h-6 w-6"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true">
+                        <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </label>
+            </div>
+            <div class="mt-6 flow-root flex-fill -mr-4 pr-4">
+                <div class="-my-6 divide-y divide-gray-500/10">
+                    <div class="space-y-2 py-6">
+                        <div class="flex flex-col gap-5 items-center">
+                            <div class="flex flex-col w-full gap-y-5">
+                                <a
+                                    href="./index.html"
+                                    class="flex items-center gap-x-[2px] text-sm font-bold text-gray-50">
+                                    Home
+                                </a>
+                                <a
+                                    href="./about.html"
+                                    class="flex items-center gap-x-[2px] text-sm font-bold text-gray-50">
+                                    About us
+                                </a>
+                                <a
+                                    href="./careers.html"
+                                    class="flex items-center gap-x-[2px] text-sm font-bold text-gray-50">
+                                    Careers
+                                </a>
+                                <a href="./project.html"
+                                    class="text-sm font-bold text-gray-50">Projects
+                                </a>
+                                <a href="./contact.html"
+                                    class="text-sm font-bold text-gray-50">Contact
+                                    Us</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative">
+            <input type="checkbox" id="dropdown-toggle" class="hidden peer" />
+
+            <div
+                class="fixed top-14 inset-x-0 z-50 hidden mt-2 origin-top-left divide-y divide-gray-100 rounded-md shadow-lg peer-checked:block">
+                <div class="relative w-full">
+                    <input
+                        type="text"
+                        class="subscribe border border-gray-300 border-t-0 border-r-0 border-l-0 text-gray-900 text-sm block w-full pb-1.5 p-2.5 focus:!outline-0 focus:!shadow-none focus:!ring-0 focus:border-gray-400"
+                        placeholder="Search for products, brands and more"
+                        required />
+                </div>
+            </div>
+        </div>
+        <!-- side bar end -->
+
+        <script
+            src="../assests/libs/glightbox-3.3.0 (1)/glightbox-3.3.0/dist/js/glightbox.min.js"></script>
+        <script>
+      var glightbox = GLightbox({
+        loop: true,
+        selector: ".glightbox3"
+      });
+    </script>
+        <script>
+        GLightbox({
+        selector: '.gallary'
+        })
+    </script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!-- Initialize Swiper -->
+        <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop:true,
+        pagination: {
+          el: ".swiper-pagination"
+        }
+      });
+    </script>
+    </body>
+</html>
