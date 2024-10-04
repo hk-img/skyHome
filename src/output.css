@@ -1385,8 +1385,12 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\.\.\/assests\/img\/krishinaCity\.jpg\)\] {
-  background-image: url(../assests/img/krishinaCity.jpg);
+.bg-\[url\(\.\.\/assests\/img\/demo06\.webp\)\] {
+  background-image: url(../assests/img/demo06.webp);
+}
+
+.bg-\[url\(\.\.\/assests\/img\/krishinaCity05\.jpeg\)\] {
+  background-image: url(../assests/img/krishinaCity05.jpeg);
 }
 
 .bg-\[url\(\.\.\/assests\/img\/krishinaHome\.jpeg\)\] {
@@ -1399,10 +1403,6 @@ video {
 
 .bg-\[url\(https\:\/\/images\.unsplash\.com\/photo-1543269664-56d93c1b41a6\?q\=80\&w\=1470\&auto\=format\&fit\=crop\&ixlib\=rb-4\.0\.3\&ixid\=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA\%3D\%3D\)\] {
   background-image: url(https://images.unsplash.com/photo-1543269664-56d93c1b41a6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
-}
-
-.bg-\[url\(https\:\/\/img\.freepik\.com\/free-photo\/urban-traffic-with-cityscape_1359-324\.jpg\?t\=st\=1726574254\~exp\=1726577854\~hmac\=5fe987e416c68f22e04e4a6fd7c2179247f342009225767bf194be5950e3026f\&w\=740\)\] {
-  background-image: url(https://img.freepik.com/free-photo/urban-traffic-with-cityscape_1359-324.jpg?t=st=1726574254~exp=1726577854~hmac=5fe987e416c68f22e04e4a6fd7c2179247f342009225767bf194be5950e3026f&w=740);
 }
 
 .bg-\[url\(https\:\/\/www\.hyperlinkinfosystem\.com\/assets\/img\/about-us\/contact-us-bg\.jpg\)\] {
@@ -1423,22 +1423,6 @@ video {
 
 .bg-\[url\(https\:\/\/www\.hyperlinkinfosystem\.com\/assets\/img\/contact-us\.png\)\] {
   background-image: url(https://www.hyperlinkinfosystem.com/assets/img/contact-us.png);
-}
-
-.bg-\[url\(\.\.\/assests\/img\/krishinaCity05\.jpeg\)\] {
-  background-image: url(../assests/img/krishinaCity05.jpeg);
-}
-
-.bg-\[url\(\)\] {
-  background-image: url();
-}
-
-.bg-\[url\(\.\.\/assests\/img\/hillsPlots\.mp4\)\] {
-  background-image: url(../assests/img/hillsPlots.mp4);
-}
-
-.bg-\[url\(\.\.\/assests\/img\/demo06\.webp\)\] {
-  background-image: url(../assests/img/demo06.webp);
 }
 
 .bg-contain {
@@ -1904,11 +1888,6 @@ video {
 
 .shadow-white\/20 {
   --tw-shadow-color: rgb(255 255 255 / 0.2);
-  --tw-shadow: var(--tw-shadow-colored);
-}
-
-.shadow-black\/0 {
-  --tw-shadow-color: rgb(0 0 0 / 0);
   --tw-shadow: var(--tw-shadow-colored);
 }
 
