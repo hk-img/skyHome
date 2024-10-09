@@ -1,888 +1,700 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="./output.css" rel="stylesheet">
-    </head>
-    <body>
-        <!-- header start  -->
-        <header
-            class="px-5 md:px-8 lg:px-16 fixed z-[99] top-0 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap w-full text-sm">
-            <nav
-                class="mt-4 relative max-w-7xl w-full bg-white border border-gray-200 rounded-[2rem] py-2.5 md:flex md:items-center md:justify-between md:py-1.5 md:px-4 md:mx-auto">
-                <div class="px-4 flex justify-between items-center">
-                    <!-- Logo -->
-                    <div>
-                        <a
-                            class="h-8 md:h-12 flex-none rounded-md text-xl inline-block font-semibold focus:outline-none focus:opacity-80"
-                            href="./index.html"
-                            aria-label="Preline">
-                            <img src="../assests/img/skyLogo.png" alt
-                                class="size-full">
-                        </a>
-                    </div>
-                    <!-- End Logo -->
 
-                    <div class="md:hidden">
-                        <!-- Toggle Button -->
-                        <div class="flex lg:hidden">
-                            <label for="sideToggle"
-                                class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-black group-[]/nav:text-black">
-                                <span class="sr-only">Open menu</span>
-                                <svg class="size-7" fill="none"
-                                    viewBox="0 0 24 24" stroke-width="1.5"
-                                    stroke="currentColor"
-                                    aria-hidden="true">
-                                    <path stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5">
-                                    </path>
-                                </svg>
-                            </label>
-                        </div>
-                        <!-- End Toggle Button -->
-                    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+</head>
+
+<body>
+    <!-- header start  -->
+    <header
+        class="px-5 md:px-8 lg:px-16 fixed z-[99] top-0 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap w-full text-sm">
+        <nav
+            class="mt-4 relative max-w-7xl w-full bg-white border border-gray-200 rounded-[2rem] py-2.5 md:flex md:items-center md:justify-between md:py-1.5 md:px-4 md:mx-auto">
+            <div class="px-4 flex justify-between items-center">
+                <!-- Logo -->
+                <div>
+                    <a class="h-8 md:h-12 flex-none rounded-md text-xl inline-block font-semibold focus:outline-none focus:opacity-80"
+                        href="./index.html" aria-label="Preline">
+                        <img src="../assests/img/skyLogo.png" alt class="size-full">
+                    </a>
                 </div>
+                <!-- End Logo -->
 
-                <div id="hs-navbar-header-floating"
-                    class="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow md:block"
-                    aria-labelledby="hs-navbar-header-floating-collapse">
-                    <div
-                        class="flex flex-col md:flex-row md:items-center md:justify-end gap-2 md:gap-3 mt-3 md:mt-0 py-2 md:py-0 md:ps-7">
-                        <a
-                            class="px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 text-base font-bold text-gray-500 border-transparent focus:outline-none"
-                            href="./index.html" aria-current="page">Home</a>
-                        <a
-                            class="px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 text-base font-bold border-transparent text-gray-500 hover:text-gray-800 focus:outline-none"
-                            href="./about.html">About</a>
-                        <a
-                            class="px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 text-base font-bold border-gray-800 text-gray-800 hover:text-gray-800 focus:outline-none"
-                            href="./project.html">Projects</a>
-                        <a
-                            class="px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 text-base font-bold border-gray-800 border-transparent text-gray-500 hover:text-gray-800 focus:outline-none"
-                            href="./careers.html">Careers</a>
-                        <a
-                            class="px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 text-base font-bold border-transparent text-gray-500 hover:text-gray-800 focus:outline-none"
-                            href="./contact.html">Contact Us</a>
+                <div class="md:hidden">
+                    <!-- Toggle Button -->
+                    <div class="flex lg:hidden">
+                        <label for="sideToggle"
+                            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-black group-[]/nav:text-black">
+                            <span class="sr-only">Open menu</span>
+                            <svg class="size-7" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5">
+                                </path>
+                            </svg>
+                        </label>
                     </div>
-                </div>
-            </nav>
-        </header>
-        <!-- header end  -->
-
-        <!-- hero section start -->
-        <section
-            class="h-[calc(100vh-70px)] bg-cover bg-no-repeat bg-center bg-[url(../assests/img/demo06.webp)] relative before:absolute before:size-full before:inset-0 before:bg-black/50">
-            <div class="mx-auto max-w-7xl px-6 lg:px-8 w-full h-full">
-                <div class="h-full flex flex-col justify-center relative z-10">
-                    <ul class="flex items-center gap-2">
-                        <li><a href="./index.html"
-                                class="text-theme1 font-bold">Home</a></li>
-                        <li class="text-white font-semibold">/</li>
-                        <li class=" text-white font-semibold">Projects</li>
-                    </ul>
-                    <div
-                        class="w-full sm:max-w-xl text-5xl sm:text-6xl text-white pt-5 leading-[130%] ">
-                        Unveil Our Project Highlights
-                        <div
-                            class="w-1/2 sm:w-[20%] h-[2px] bg-white mt-5"></div>
-                    </div>
+                    <!-- End Toggle Button -->
                 </div>
             </div>
-        </section>
-        <!-- hero section Ends -->
 
-        <!-- Tabs -->
-        <div class="rounded py-12 max-w-7xl mx-auto px-6 lg:px-8 w-full">
-            <div class="w-fit mx-auto">
-                <ul id="tabs"
-                    class="inline-flex justify-center bg-gray-200 rounded-lg p-1">
-                    <li
-                        class="bg-white px-4 text-gray-800 text-2xl font-semibold py-2 rounded-lg min-w-32 text-center">
-                        <a id="default-tab" href="#first">Ongoing Projects</a>
-                    </li>
-                    <li
-                        class="px-4 text-gray-800 text-2xl font-semibold py-2 rounded-lg min-w-32 text-center">
-                        <a href="#second">Completed Projects</a>
-                    </li>
+            <div id="hs-navbar-header-floating"
+                class="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow md:block"
+                aria-labelledby="hs-navbar-header-floating-collapse">
+                <div
+                    class="flex flex-col md:flex-row md:items-center md:justify-end gap-2 md:gap-3 mt-3 md:mt-0 py-2 md:py-0 md:ps-7">
+                    <a class="px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 text-base font-bold text-gray-500 border-transparent focus:outline-none"
+                        href="./index.html" aria-current="page">Home</a>
+                    <a class="px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 text-base font-bold border-transparent text-gray-500 hover:text-gray-800 focus:outline-none"
+                        href="./about.html">About</a>
+                    <a class="px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 text-base font-bold border-gray-800 text-gray-800 hover:text-gray-800 focus:outline-none"
+                        href="./project.html">Projects</a>
+                    <a class="px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 text-base font-bold border-gray-800 border-transparent text-gray-500 hover:text-gray-800 focus:outline-none"
+                        href="./careers.html">Careers</a>
+                    <a class="px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 text-base font-bold border-transparent text-gray-500 hover:text-gray-800 focus:outline-none"
+                        href="./contact.html">Contact Us</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header end  -->
+
+    <!-- hero section start -->
+    <section
+        class="h-[65dvh] bg-cover bg-no-repeat bg-center bg-[url(../assests/img/demo06.webp)] relative before:absolute before:size-full before:inset-0 before:bg-black/50">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8 w-full h-full">
+            <div class="h-full flex flex-col justify-center relative z-10">
+                <ul class="flex items-center gap-2">
+                    <li><a href="./index.html" class="text-theme1 font-bold">Home</a></li>
+                    <li class="text-white font-semibold">/</li>
+                    <li class=" text-white font-semibold">Projects</li>
                 </ul>
-            </div>
-
-            <!-- Tab Contents -->
-            <div id="tab-contents">
-                <div id="first" class="p-4">
-                    <section
-                        class="py-8 md:py-12 lg:py-16 mx-auto max-w-7xl px-6 lg:px-8 w-full">
-                        <div
-                            class="lg:text-6xl md:text-6xl text-4xl font-bold text-theme1 pb-8">
-                            Our
-                            <span
-                                class="relative text-theme1 [-webkit-text-fill-color:transparent] lg:[-webkit-text-stroke-width:2px] [-webkit-text-stroke-width:1px] [-webkit-text-stroke-color:theme1]">Ongoing
-                                Projects</span>
-                        </div>
-                        <div
-                            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-                            <a href="./krishinaCity.html"
-                                class="w-full group/main aspect-[1/0.5] sm:aspect-square lg:aspect-[1/1.4] *:hover:scale-105 *:duration-500 overflow-hidden relative *:size-full *:object-cover after:absolute after:size-full after:bg-black/40 after:inset-0 after:hover:backdrop-blur-sm after:duration-500	">
-                                <img
-                                    src="../assests/img/krishinaHome.jpeg"
-                                    alt>
-                                <div
-                                    class="px-2 pb-2 lg:p-2 bottom-6 overflow-hidden absolute z-50 !h-max !w-[90%] left-1/2 -translate-x-1/2">
-
-                                    <div
-                                        class="translate-y-28 group-hover/main:-translate-y-0 duration-300">
-                                        <h2
-                                            class="text-2xl w-full font-semibold text-white">
-                                            Krishna City
-                                        </h2>
-                                        <p
-                                            class="text-white font-medium text-sm mt-1 uppercase">2021</p>
-                                        <p
-                                            class="text-white font-medium text-sm mt-1 uppercase">#largest
-                                            project</p>
-                                        <p class="text-xs text-white mt-2">We
-                                            have
-                                            introduced Krishna City Kotputli's
-                                            largest
-                                            project at an attractive price.</p>
-                                        <button
-                                            class="flex items-center group w-max overflow-hidden">
-
-                                            <span
-                                                class="*:size-10 text-white mt-2 group-hover:-translate-x-10 duration-300">
-                                                <svg stroke="currentColor"
-                                                    fill="currentColor"
-                                                    stroke-width="0"
-                                                    viewBox="0 0 512 512"
-                                                    height="200px"
-                                                    width="200px"
-                                                    xmlns="http://www.w3.org/2000/svg"><path
-                                                        fill="none"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        stroke-width="32"
-                                                        d="M400 256H112"></path></svg>
-                                            </span>
-                                            <span
-                                                class="text-white group-hover:-translate-x-10 duration-300 group-hover:text-theme1">Learn
-                                                More</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="./shreeShyam.html"
-                                class="w-full group/main aspect-[1/0.5] sm:aspect-square lg:aspect-[1/1.4] *:hover:scale-105 *:duration-500 overflow-hidden relative *:size-full *:object-cover after:absolute after:size-full after:bg-black/40 after:inset-0 after:hover:backdrop-blur-sm after:duration-500	">
-                                <img
-                                    src="../assests/img/shreeShyam01.jpeg"
-                                    alt>
-                                <div
-                                    class="px-2 pb-2 lg:p-2 bottom-6 overflow-hidden absolute z-50 !h-max !w-[90%] left-1/2 -translate-x-1/2">
-
-                                    <div
-                                        class="translate-y-28 group-hover/main:-translate-y-0 duration-300">
-                                        <h2
-                                            class="text-2xl w-full font-semibold text-white">
-                                            Shree Shyam Farmhouse
-                                        </h2>
-                                        <p
-                                            class="text-white font-medium text-sm mt-1 uppercase">2023</p>
-                                        <p
-                                            class="text-white font-medium text-sm mt-1 uppercase">#Sundarpura
-                                        </p>
-                                        <p class="text-xs text-white mt-2">Shyam
-                                            Vatika has
-                                            opened on Sundarpura Road.</p>
-                                        <button
-                                            class="flex items-center group w-max overflow-hidden">
-
-                                            <span
-                                                class="*:size-10 text-white mt-2 group-hover:-translate-x-10 duration-300">
-                                                <svg stroke="currentColor"
-                                                    fill="currentColor"
-                                                    stroke-width="0"
-                                                    viewBox="0 0 512 512"
-                                                    height="200px"
-                                                    width="200px"
-                                                    xmlns="http://www.w3.org/2000/svg"><path
-                                                        fill="none"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        stroke-width="32"
-                                                        d="M400 256H112"></path></svg>
-                                            </span>
-                                            <span
-                                                class="text-white group-hover:-translate-x-10 duration-300 group-hover:text-theme1">Learn
-                                                More</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#"
-                                class="w-full group/main aspect-[1/0.5] sm:aspect-square lg:aspect-[1/1.4] *:hover:scale-105 *:duration-500 overflow-hidden relative *:size-full *:object-cover after:absolute after:size-full after:bg-black/40 after:inset-0 after:hover:backdrop-blur-sm after:duration-500	">
-                                <img
-                                    src="../assests/img/skyAngan.jpg"
-                                    alt>
-                                <div
-                                    class="px-2 pb-2 lg:p-2 bottom-6 overflow-hidden absolute z-50 !h-max !w-[90%] left-1/2 -translate-x-1/2">
-
-                                    <div
-                                        class="translate-y-28 group-hover/main:-translate-y-0 duration-300">
-                                        <h2
-                                            class="text-2xl w-full font-semibold text-white">
-                                            Atulyam
-                                        </h2>
-                                        <p
-                                            class="text-white font-medium text-sm mt-1 uppercase">2024</p>
-                                        <p
-                                            class="text-white font-medium text-sm mt-1 uppercase">#substantial
-                                            passive income</p>
-                                        <p class="text-xs text-white mt-2">Sky
-                                            Homes
-                                            introduced ATULYAM for generating
-                                            substantial
-                                            passive income.</p>
-                                        <button
-                                            class="flex items-center group w-max overflow-hidden">
-
-                                            <span
-                                                class="*:size-10 text-white mt-2 group-hover:-translate-x-10 duration-300">
-                                                <svg stroke="currentColor"
-                                                    fill="currentColor"
-                                                    stroke-width="0"
-                                                    viewBox="0 0 512 512"
-                                                    height="200px"
-                                                    width="200px"
-                                                    xmlns="http://www.w3.org/2000/svg"><path
-                                                        fill="none"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        stroke-width="32"
-                                                        d="M400 256H112"></path></svg>
-                                            </span>
-                                            <span
-                                                class="text-white group-hover:-translate-x-10 duration-300 group-hover:text-theme1">Learn
-                                                More</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-
-                    </section>
-                </div>
-                <div id="second" class="hidden p-4">
-                    <section
-                        class="py-8 md:py-12 lg:py-16 mx-auto max-w-7xl px-6 lg:px-8 w-full">
-                        <div
-                            class="lg:text-6xl md:text-6xl text-4xl font-bold text-theme1 pb-8">
-                            Our
-                            <span
-                                class="relative text-theme1 [-webkit-text-fill-color:transparent] lg:[-webkit-text-stroke-width:2px] [-webkit-text-stroke-width:1px] [-webkit-text-stroke-color:theme1]">Sold Projects</span>
-                        </div>
-                        <div
-                            class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
-                            <div
-                                class="w-full group/main aspect-[1/0.5] sm:aspect-square lg:aspect-[1/1.4] *:hover:scale-105 *:duration-500 overflow-hidden relative *:size-full *:object-cover after:absolute after:size-full after:bg-black/40 after:inset-0 after:hover:backdrop-blur-sm after:duration-500	">
-                                <img
-                                    src="../assests/img/demo01.webp"
-                                    alt>
-                                <div
-                                    class="px-2 pb-3 lg:p-2 bottom-6 overflow-hidden absolute z-50 !h-max !w-[90%] left-1/2 -translate-x-1/2">
-
-                                    <div
-                                        class="translate-y-28 group-hover/main:-translate-y-0 duration-300">
-                                        <h2
-                                            class="text-2xl w-2/3 font-semibold text-white">
-                                            Om Nagar
-                                        </h2>
-                                        <p
-                                            class="text-white font-medium text-sm mt-1 uppercase">2006</p>
-                                        <p
-                                            class="text-white font-medium text-sm mt-1 uppercase">#most
-                                            affordable plots</p>
-                                        <p
-                                            class="text-xs text-white mt-2">Started
-                                            in Om
-                                            Nagar and offered the most
-                                            affordable plots.</p>
-                                        <button
-                                            class="flex items-center group w-max overflow-hidden">
-
-                                            <span
-                                                class="*:size-10 text-white mt-2 group-hover:-translate-x-10 duration-300">
-                                                <svg stroke="currentColor"
-                                                    fill="currentColor"
-                                                    stroke-width="0"
-                                                    viewBox="0 0 512 512"
-                                                    height="200px"
-                                                    width="200px"
-                                                    xmlns="http://www.w3.org/2000/svg"><path
-                                                        fill="none"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        stroke-width="32"
-                                                        d="M400 256H112"></path></svg>
-                                            </span>
-                                            <span
-                                                class="text-white group-hover:-translate-x-10 duration-300 group-hover:text-theme1">Learn
-                                                More</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="w-full group/main aspect-[1/0.5] sm:aspect-square lg:aspect-[1/1.4] *:hover:scale-105 *:duration-500 overflow-hidden relative *:size-full *:object-cover after:absolute after:size-full after:bg-black/40 after:inset-0 after:hover:backdrop-blur-sm after:duration-500	">
-                                <img
-                                    src="../assests/img/demo02.webp"
-                                    alt>
-                                <div
-                                    class="px-2 pb-3 lg:p-2 bottom-6 overflow-hidden absolute z-50 !h-max !w-[90%] left-1/2 -translate-x-1/2">
-
-                                    <div
-                                        class="translate-y-28 group-hover/main:-translate-y-0 duration-300">
-                                        <h2
-                                            class="text-2xl w-2/3 font-semibold text-white">
-                                            Keshargarh
-                                        </h2>
-                                        <p
-                                            class="text-white font-medium text-sm mt-1 uppercase">2009</p>
-                                        <p
-                                            class="text-white font-medium text-sm mt-1 uppercase">#Second
-                                            Project</p>
-                                        <p class="text-xs text-white mt-2">Our
-                                            Second
-                                            Project, Keshargarh, Has Been
-                                            Launched.</p>
-                                        <button
-                                            class="flex items-center group w-max overflow-hidden">
-
-                                            <span
-                                                class="*:size-10 text-white mt-2 group-hover:-translate-x-10 duration-300">
-                                                <svg stroke="currentColor"
-                                                    fill="currentColor"
-                                                    stroke-width="0"
-                                                    viewBox="0 0 512 512"
-                                                    height="200px"
-                                                    width="200px"
-                                                    xmlns="http://www.w3.org/2000/svg"><path
-                                                        fill="none"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        stroke-width="32"
-                                                        d="M400 256H112"></path></svg>
-                                            </span>
-                                            <span
-                                                class="text-white group-hover:-translate-x-10 duration-300 group-hover:text-theme1">Learn
-                                                More</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="w-full group/main aspect-[1/0.5] sm:aspect-square lg:aspect-[1/1.4] *:hover:scale-105 *:duration-500 overflow-hidden relative *:size-full *:object-cover after:absolute after:size-full after:bg-black/40 after:inset-0 after:hover:backdrop-blur-sm after:duration-500	">
-                                <img
-                                    src="../assests/img/demo03.webp"
-                                    alt>
-                                <div
-                                    class="px-2 pb-2 lg:p-2 bottom-6 overflow-hidden absolute z-50 !h-max !w-[90%] left-1/2 -translate-x-1/2">
-
-                                    <div
-                                        class="translate-y-28 group-hover/main:-translate-y-0 duration-300">
-                                        <h2
-                                            class="text-2xl w-full font-semibold text-white">
-                                            Sky Aangan Phase 1
-                                        </h2>
-                                        <p
-                                            class="text-white font-medium text-sm mt-1 uppercase">2012</p>
-                                        <p
-                                            class="text-white font-medium text-sm mt-1 uppercase">#largest
-                                            project </p>
-                                        <p class="text-xs text-white mt-2">Sky
-                                            Aangan Phase
-                                            1 has allowed us to reach new
-                                            clients outside
-                                            our usual circle.</p>
-                                        <button
-                                            class="flex items-center group w-max overflow-hidden">
-
-                                            <span
-                                                class="*:size-10 text-white mt-2 group-hover:-translate-x-10 duration-300">
-                                                <svg stroke="currentColor"
-                                                    fill="currentColor"
-                                                    stroke-width="0"
-                                                    viewBox="0 0 512 512"
-                                                    height="200px"
-                                                    width="200px"
-                                                    xmlns="http://www.w3.org/2000/svg"><path
-                                                        fill="none"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        stroke-width="32"
-                                                        d="M400 256H112"></path></svg>
-                                            </span>
-                                            <span
-                                                class="text-white group-hover:-translate-x-10 duration-300 group-hover:text-theme1">Learn
-                                                More</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="w-full group/main aspect-[1/0.5] sm:aspect-square lg:aspect-[1/1.4] *:hover:scale-105 *:duration-500 overflow-hidden relative *:size-full *:object-cover after:absolute after:size-full after:bg-black/40 after:inset-0 after:hover:backdrop-blur-sm after:duration-500	">
-                                <img
-                                    src="../assests/img/demo04.webp"
-                                    alt>
-                                <div
-                                    class="px-2 pb-2 lg:p-2 bottom-6 overflow-hidden absolute z-50 !h-max !w-[90%] left-1/2 -translate-x-1/2">
-
-                                    <div
-                                        class="translate-y-28 group-hover/main:-translate-y-0 duration-300">
-                                        <h2
-                                            class="text-2xl w-full font-semibold text-white">
-                                            Sky Aangan Phase 2
-                                        </h2>
-                                        <p
-                                            class="text-white font-medium text-sm mt-1 uppercase">2014</p>
-                                        <p
-                                            class="text-white font-medium text-sm mt-1 uppercase">Gurganv
-                                            office</p>
-                                        <p class="text-xs text-white mt-2">With
-                                            the launch
-                                            of our Gurganv office, we introduce
-                                            Sky Aangan
-                                            Phase 2.</p>
-                                        <button
-                                            class="flex items-center group w-max overflow-hidden">
-
-                                            <span
-                                                class="*:size-10 text-white mt-2 group-hover:-translate-x-10 duration-300">
-                                                <svg stroke="currentColor"
-                                                    fill="currentColor"
-                                                    stroke-width="0"
-                                                    viewBox="0 0 512 512"
-                                                    height="200px"
-                                                    width="200px"
-                                                    xmlns="http://www.w3.org/2000/svg"><path
-                                                        fill="none"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        stroke-width="32"
-                                                        d="M400 256H112"></path></svg>
-                                            </span>
-                                            <span
-                                                class="text-white group-hover:-translate-x-10 duration-300 group-hover:text-theme1">Learn
-                                                More</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="w-full group/main aspect-[1/0.5] sm:aspect-square lg:aspect-[1/1.4] *:hover:scale-105 *:duration-500 overflow-hidden relative *:size-full *:object-cover after:absolute after:size-full after:bg-black/40 after:inset-0 after:hover:backdrop-blur-sm after:duration-500	">
-                                <img
-                                    src="https://img.freepik.com/free-photo/beautiful-landscape-with-small-village_23-2149721819.jpg?t=st=1726575398~exp=1726578998~hmac=df2d7b465b823fa7b3851015d3d5ffb8971b96f0b2410e2abaf8383a91cb7952&w=826"
-                                    alt>
-                                <div
-                                    class="px-2 pb-2 lg:p-2 bottom-6 overflow-hidden absolute z-50 !h-max !w-[90%] left-1/2 -translate-x-1/2">
-
-                                    <div
-                                        class="translate-y-28 group-hover/main:-translate-y-0 duration-300">
-                                        <h2
-                                            class="text-2xl w-full font-semibold text-white">
-                                            Amar Enclave
-                                        </h2>
-                                        <p
-                                            class="text-white font-medium text-sm mt-1 uppercase">2021</p>
-                                        <p
-                                            class="text-white font-medium text-sm mt-1 uppercase">#largest
-                                            project</p>
-                                        <p class="text-xs text-white mt-2">We
-                                            have
-                                            introduced Krishna City Kotputli's
-                                            largest
-                                            project at an attractive price.</p>
-                                        <button
-                                            class="flex items-center group w-max overflow-hidden">
-
-                                            <span
-                                                class="*:size-10 text-white mt-2 group-hover:-translate-x-10 duration-300">
-                                                <svg stroke="currentColor"
-                                                    fill="currentColor"
-                                                    stroke-width="0"
-                                                    viewBox="0 0 512 512"
-                                                    height="200px"
-                                                    width="200px"
-                                                    xmlns="http://www.w3.org/2000/svg"><path
-                                                        fill="none"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        stroke-width="32"
-                                                        d="M400 256H112"></path></svg>
-                                            </span>
-                                            <span
-                                                class="text-white group-hover:-translate-x-10 duration-300 group-hover:text-theme1">Learn
-                                                More</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="w-full group/main aspect-[1/0.5] sm:aspect-square lg:aspect-[1/1.4] *:hover:scale-105 *:duration-500 overflow-hidden relative *:size-full *:object-cover after:absolute after:size-full after:bg-black/40 after:inset-0 after:hover:backdrop-blur-sm after:duration-500	">
-                                <img
-                                    src="../assests/img/demo05.webp"
-                                    alt>
-                                <div
-                                    class="px-2 pb-2 lg:p-2 bottom-6 overflow-hidden absolute z-50 !h-max !w-[90%] left-1/2 -translate-x-1/2">
-
-                                    <div
-                                        class="translate-y-28 group-hover/main:-translate-y-0 duration-300">
-                                        <h2
-                                            class="text-2xl w-full font-semibold text-white">
-                                            Shyam Vatika
-                                        </h2>
-                                        <p
-                                            class="text-white font-medium text-sm mt-1 uppercase">2023</p>
-                                        <p
-                                            class="text-white font-medium text-sm mt-1 uppercase">#Sundarpura
-                                        </p>
-                                        <p class="text-xs text-white mt-2">Shyam
-                                            Vatika has
-                                            opened on Sundarpura Road.</p>
-                                        <button
-                                            class="flex items-center group w-max overflow-hidden">
-
-                                            <span
-                                                class="*:size-10 text-white mt-2 group-hover:-translate-x-10 duration-300">
-                                                <svg stroke="currentColor"
-                                                    fill="currentColor"
-                                                    stroke-width="0"
-                                                    viewBox="0 0 512 512"
-                                                    height="200px"
-                                                    width="200px"
-                                                    xmlns="http://www.w3.org/2000/svg"><path
-                                                        fill="none"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        stroke-width="32"
-                                                        d="M400 256H112"></path></svg>
-                                            </span>
-                                            <span
-                                                class="text-white group-hover:-translate-x-10 duration-300 group-hover:text-theme1">Learn
-                                                More</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div
-                                class="w-full group/main aspect-[1/0.5] sm:aspect-square lg:aspect-[1/1.4] *:hover:scale-105 *:duration-500 overflow-hidden relative *:size-full *:object-cover after:absolute after:size-full after:bg-black/40 after:inset-0 after:hover:backdrop-blur-sm after:duration-500	">
-                                <img
-                                    src="../assests/img/demo06.webp"
-                                    alt>
-                                <div
-                                    class="px-2 pb-2 lg:p-2 bottom-6 overflow-hidden absolute z-50 !h-max !w-[90%] left-1/2 -translate-x-1/2">
-
-                                    <div
-                                        class="translate-y-28 group-hover/main:-translate-y-0 duration-300">
-                                        <h2
-                                            class="text-2xl w-full font-semibold text-white">
-                                            Bhagwati Vihar
-                                        </h2>
-                                        <p
-                                            class="text-white font-medium text-sm mt-1 uppercase">2024</p>
-                                        <p
-                                            class="text-white font-medium text-sm mt-1 uppercase">#substantial
-                                            passive income</p>
-                                        <p class="text-xs text-white mt-2">Sky
-                                            Homes
-                                            introduced Bhagwati Vihar for generating
-                                            substantial
-                                            passive income.</p>
-                                        <button
-                                            class="flex items-center group w-max overflow-hidden">
-
-                                            <span
-                                                class="*:size-10 text-white mt-2 group-hover:-translate-x-10 duration-300">
-                                                <svg stroke="currentColor"
-                                                    fill="currentColor"
-                                                    stroke-width="0"
-                                                    viewBox="0 0 512 512"
-                                                    height="200px"
-                                                    width="200px"
-                                                    xmlns="http://www.w3.org/2000/svg"><path
-                                                        fill="none"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                        stroke-width="32"
-                                                        d="M400 256H112"></path></svg>
-                                            </span>
-                                            <span
-                                                class="text-white group-hover:-translate-x-10 duration-300 group-hover:text-theme1">Learn
-                                                More</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </section>
+                <div class="w-full sm:max-w-xl text-5xl sm:text-6xl text-white pt-5 leading-[130%] ">
+                    Unveil Our Project Highlights
+                    <div class="w-1/2 sm:w-[20%] h-[2px] bg-white mt-5"></div>
                 </div>
             </div>
         </div>
+    </section>
+    <!-- hero section Ends -->
 
+    <!-- Tabs -->
+    <div class="rounded py-12 max-w-7xl mx-auto px-6 lg:px-8 w-full">
+        <div class="w-fit mx-auto">
+            <ul id="tabs" class="inline-flex justify-center bg-gray-200 rounded-lg p-1">
+                <li class="bg-white px-4 text-gray-800 text-2xl font-semibold py-2 rounded-lg min-w-32 text-center">
+                    <a id="default-tab" href="#first">Ongoing Projects</a>
+                </li>
+                <li class="px-4 text-gray-800 text-2xl font-semibold py-2 rounded-lg min-w-32 text-center">
+                    <a href="#second">Completed Projects</a>
+                </li>
+            </ul>
+        </div>
 
-        <!-- footer start -->
-        <footer class="mt-auto bg-gray-900 w-full">
-            <div
-                class="mt-auto max-2xl:max-w-7xl 2xl:px-24 3xl:px-36  px-6 lg:px-8 w-full py-6 lg:pt-20 mx-auto">
-                <div
-                    class="grid grid-cols-3 sm:grid-cols-6 md:grid-cols-12 gap-6">
-                    <div class="col-span-3">
-                        <a
-                            class="[filter:contrast(0)brightness(2)] flex-none inline-block 3xl:max-w-60 2xl:max-w-50 max-w-40 text-xl font-semibold text-white focus:outline-none focus:opacity-80"
-                            href="./index.html" aria-label="Brand">
-                            <img src="../assests/img/skyLogo.png" alt="logo"
-                                class="w-full h-full" />
+        <!-- Tab Contents -->
+        <div id="tab-contents">
+            <div id="first" class="p-4">
+                <section class="py-8 md:py-12 lg:py-16 mx-auto max-w-7xl px-6 lg:px-8 w-full">
+                    <div class="lg:text-6xl md:text-6xl text-4xl font-bold text-theme1 pb-8">
+                        Our
+                        <span
+                            class="relative text-theme1 [-webkit-text-fill-color:transparent] lg:[-webkit-text-stroke-width:2px] [-webkit-text-stroke-width:1px] [-webkit-text-stroke-color:theme1]">Ongoing
+                            Projects</span>
+                    </div>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                        <a href="./krishinaCity.html"
+                            class="w-full group/main aspect-[1/0.5] sm:aspect-square lg:aspect-[1/1.4] *:hover:scale-105 *:duration-500 overflow-hidden relative *:size-full *:object-cover after:absolute after:size-full after:bg-black/40 after:inset-0 after:hover:backdrop-blur-sm after:duration-500	">
+                            <img src="../assests/img/krishinaHome.jpeg" alt>
+                            <div
+                                class="px-2 pb-2 lg:p-2 bottom-6 overflow-hidden absolute z-50 !h-max !w-[90%] left-1/2 -translate-x-1/2">
+
+                                <div class="translate-y-36 group-hover/main:-translate-y-0 duration-300">
+                                    <h2 class="text-2xl w-full font-semibold text-white">
+                                        Krishna City
+                                    </h2>
+                                    <p class="text-white font-medium text-sm mt-1 uppercase">2021</p>
+                                    <p class="text-white font-medium text-sm mt-1 uppercase">#largest
+                                        project</p>
+                                    <p class="text-xs text-white mt-2">We
+                                        have
+                                        introduced Krishna City Kotputli's
+                                        largest
+                                        project at an attractive price.</p>
+                                    <button class="flex items-center group w-max overflow-hidden">
+
+                                        <span
+                                            class="*:size-10 text-white mt-2 group-hover:-translate-x-10 duration-300">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 512 512" height="200px" width="200px"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-width="32" d="M400 256H112"></path>
+                                            </svg>
+                                        </span>
+                                        <span
+                                            class="text-white group-hover:-translate-x-10 duration-300 group-hover:text-theme1">Learn
+                                            More</span>
+                                    </button>
+                                </div>
+                            </div>
                         </a>
-                        <div class>
-                            <p
-                                class="text-white text-base">
-                                A Unit of Homkar Homes LLB
-                            </p>
-                            <p
-                                class="text-gray-400 text-base 2xl:text-lg 3xl:text-2xl py-5">
-                                A company that offers perfect land for your
-                                requirements. Sky Home was established in 2006
-                                in
-                                Kotputli and now proudly serves people
-                                throughout
-                                Rajasthan.
-                            </p>
-                        </div>
+                        <a href="./shreeShyam.html"
+                            class="w-full group/main aspect-[1/0.5] sm:aspect-square lg:aspect-[1/1.4] *:hover:scale-105 *:duration-500 overflow-hidden relative *:size-full *:object-cover after:absolute after:size-full after:bg-black/40 after:inset-0 after:hover:backdrop-blur-sm after:duration-500	">
+                            <img src="../assests/img/shreeShyam01.jpeg" alt>
+                            <div
+                                class="px-2 pb-2 lg:p-2 bottom-6 overflow-hidden absolute z-50 !h-max !w-[90%] left-1/2 -translate-x-1/2">
+
+                                <div class="translate-y-32 group-hover/main:-translate-y-0 duration-300">
+                                    <h2 class="text-2xl w-full font-semibold text-white">
+                                        Shree Shyam Farmhouse
+                                    </h2>
+                                    <p class="text-white font-medium text-sm mt-1 uppercase">2023</p>
+                                    <p class="text-white font-medium text-sm mt-1 uppercase">#Sundarpura
+                                    </p>
+                                    <p class="text-xs text-white mt-2">Shyam
+                                        Vatika has
+                                        opened on Sundarpura Road.</p>
+                                    <button class="flex items-center group w-max overflow-hidden">
+
+                                        <span
+                                            class="*:size-10 text-white mt-2 group-hover:-translate-x-10 duration-300">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 512 512" height="200px" width="200px"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-width="32" d="M400 256H112"></path>
+                                            </svg>
+                                        </span>
+                                        <span
+                                            class="text-white group-hover:-translate-x-10 duration-300 group-hover:text-theme1">Learn
+                                            More</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="./atulyam.html"
+                            class="w-full group/main aspect-[1/0.5] sm:aspect-square lg:aspect-[1/1.4] *:hover:scale-105 *:duration-500 overflow-hidden relative *:size-full *:object-cover after:absolute after:size-full after:bg-black/40 after:inset-0 after:hover:backdrop-blur-sm after:duration-500	">
+                            <img src="../assests/img/skyAngan.jpg" alt>
+                            <div
+                                class="px-2 pb-2 lg:p-2 bottom-6 overflow-hidden absolute z-50 !h-max !w-[90%] left-1/2 -translate-x-1/2">
+
+                                <div class="translate-y-36 group-hover/main:-translate-y-0 duration-300">
+                                    <h2 class="text-2xl w-full font-semibold text-white">
+                                        Atulyam
+                                    </h2>
+                                    <p class="text-white font-medium text-sm mt-1 uppercase">2024</p>
+                                    <p class="text-white font-medium text-sm mt-1 uppercase">#substantial
+                                        passive income</p>
+                                    <p class="text-xs text-white mt-2">Sky
+                                        Homes
+                                        introduced Atulyam for generating
+                                        substantial
+                                        passive income.</p>
+                                    <button class="flex items-center group w-max overflow-hidden">
+
+                                        <span
+                                            class="*:size-10 text-white mt-2 group-hover:-translate-x-10 duration-300">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 512 512" height="200px" width="200px"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-width="32" d="M400 256H112"></path>
+                                            </svg>
+                                        </span>
+                                        <span
+                                            class="text-white group-hover:-translate-x-10 duration-300 group-hover:text-theme1">Learn
+                                            More</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
                     </div>
 
-                    <div class="col-span-3 md:mx-auto">
-                        <h4
-                            class="font-semibold text-gray-100 text-base 2xl:text-lg 3xl:text-2xl">Company</h4>
+                </section>
+            </div>
 
-                        <div class="mt-3 grid space-y-3">
-                            <p>
-                                <a
-                                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
-                                    href="./about.html">About Sky Homes</a>
-                            </p>
-                            <p>
-                                <a
-                                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
-                                    href="./project.html">Projects</a>
-                            </p>
-                            <p>
-                                <a
-                                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
-                                    href="./careers.html">Careers</a>
-                                <span
-                                    class="inline-block ms-1 text-[10px] bg-theme2 text-white py-1 px-1.5 rounded-md">We're
-                                    hiring</span>
-                            </p>
-                            <p>
-                                <a
-                                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
-                                    href="./contact.html">Contact Us</a>
-                            </p>
-                        </div>
+            <div id="second" class="hidden p-4">
+                <section class="py-8 md:py-12 lg:py-16 mx-auto max-w-7xl px-6 lg:px-8 w-full">
+                    <div class="lg:text-6xl md:text-6xl text-4xl font-bold text-theme1 pb-8">
+                        Our
+                        <span
+                            class="relative text-theme1 [-webkit-text-fill-color:transparent] lg:[-webkit-text-stroke-width:2px] [-webkit-text-stroke-width:1px] [-webkit-text-stroke-color:theme1]">Sold
+                            Projects</span>
                     </div>
-
-                    <div class="col-span-3 md:mx-auto">
-                        <h4
-                            class="font-semibold text-gray-100 text-base 2xl:text-lg 3xl:text-2xl">Projects</h4>
-
-                        <div class="mt-3 grid space-y-3">
-                            <p>
-                                <a
-                                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
-                                    href="javascript:;">Om Nagar</a>
-                            </p>
-                            <p>
-                                <a
-                                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
-                                    href="javascript:;">Keshargarh</a>
-                            </p>
-                            <p>
-                                <a
-                                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
-                                    href="javascript:;">Sky Aangan</a>
-                            </p>
-                            <p>
-                                <a
-                                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
-                                    href="javascript:;">Krishna City</a>
-                            </p>
-                            <p>
-                                <a
-                                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
-                                    href="javascript:;">Bhagwati Vihar</a>
-                            </p>
-                            <p>
-                                <a
-                                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
-                                    href="javascript:;">Shyam Vatika</a>
-                            </p>
-                            <p>
-                                <a
-                                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
-                                    href="javascript:;">ATULYAM</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-span-3">
-                        <h4
-                            class="font-semibold text-gray-100 text-base 2xl:text-lg 3xl:text-2xl">Social
-                            Media</h4>
-                        <p
-                            class="text-gray-400 text-base 2xl:text-lg 3xl:text-2xl py-5">
-                            Don't miss out—follow us on our social networks
-                        </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
                         <div
-                            class="w-full flex flex-wrap items-center gap-2 pt-3">
-                            <a href="javascript:;"
-                                class="inline-flex group/social justify-center items-center bg-white mx-[5px] text-center relative overflow-hidden rounded-lg shadow-xl shadow-white/20 border-[3px] border-white duration-300 w-10 md:w-12 h-10 md:h-12 text-base before:bg-rose-500 before:w-[136%] before:h-[133%] before:absolute before:[transform:rotate(45deg)] before:top-[90%] before:-left-[110%] before:duration-300 text-rose-500 p-2 lg:p-3 2xl:p-2 hover:before:-top-[16%] hover:before:-left-[16%] before:ease-[cubic-bezier(0.31,-0.105,0.43,1.59)]">
-                                <svg
-                                    class="size-full group-hover/social:text-white group-hover/social:scale-100 scale-95 duration-300"
-                                    stroke="currentColor" fill="currentColor"
-                                    stroke-width="0" viewBox="0 0 448 512"
-                                    height="200px" width="200px"
-                                    xmlns="http://www.w3.org/2000/svg"><path
-                                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
-                            </a>
-                            <a href="javascript:;"
-                                class="inline-flex group/social justify-center items-center bg-white mx-[5px] text-center relative overflow-hidden rounded-lg shadow-xl shadow-white/20 border-[3px] border-white duration-300 w-10 md:w-12 h-10 md:h-12 text-base before:bg-blue-900 before:w-[136%] before:h-[133%] before:absolute before:[transform:rotate(45deg)] before:top-[90%] before:-left-[110%] before:duration-300 text-blue-900 p-2 lg:p-3 2xl:p-2 hover:before:-top-[16%] hover:before:-left-[16%] before:ease-[cubic-bezier(0.31,-0.105,0.43,1.59)]">
-                                <svg
-                                    class="size-full group-hover/social:text-white group-hover/social:scale-100 scale-95 duration-300"
-                                    stroke="currentColor" fill="currentColor"
-                                    stroke-width="0" viewBox="0 0 320 512"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
-                                    </path>
-                                </svg>
-                            </a>
-                            <a href="javascript:;"
-                                class="inline-flex group/social justify-center items-center bg-white mx-[5px] text-center relative overflow-hidden rounded-lg shadow-xl shadow-white/20 border-[3px] border-white duration-300 w-10 md:w-12 h-10 md:h-12 text-base before:bg-black before:w-[136%] before:h-[133%] before:absolute before:[transform:rotate(45deg)] before:top-[90%] before:-left-[110%] before:duration-300 text-black p-2 lg:p-3 2xl:p-2 hover:before:-top-[16%] hover:before:-left-[16%] before:ease-[cubic-bezier(0.31,-0.105,0.43,1.59)]">
-                                <svg
-                                    class="size-full group-hover/social:text-white group-hover/social:scale-100 scale-95 duration-300"
-                                    stroke="currentColor" fill="currentColor"
-                                    stroke-width="0" viewBox="0 0 512 512"
-                                    height="200px" width="200px"
-                                    xmlns="http://www.w3.org/2000/svg"><path
-                                        d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg>
-                            </a>
-                            <a href="javascript:;"
-                                class="inline-flex group/social justify-center items-center bg-white mx-[5px] text-center relative overflow-hidden rounded-lg shadow-xl shadow-white/20 border-[3px] border-white duration-300 w-10 md:w-12 h-10 md:h-12 text-base before:bg-red-700 before:w-[136%] before:h-[133%] before:absolute before:[transform:rotate(45deg)] before:top-[90%] before:-left-[110%] before:duration-300 text-red-700 p-2 lg:p-3 2xl:p-2 hover:before:-top-[16%] hover:before:-left-[16%] before:ease-[cubic-bezier(0.31,-0.105,0.43,1.59)]">
-                                <svg
-                                    class="size-full group-hover/social:text-white group-hover/social:scale-100 scale-95 duration-300"
-                                    stroke="currentColor" fill="currentColor"
-                                    stroke-width="0" viewBox="0 0 576 512"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
-                                    </path>
-                                </svg>
-                            </a>
+                            class="w-full group/main aspect-[1/0.5] sm:aspect-square lg:aspect-[1/1.4] *:hover:scale-105 *:duration-500 overflow-hidden relative *:size-full *:object-cover after:absolute after:size-full after:bg-black/40 after:inset-0 after:hover:backdrop-blur-sm after:duration-500	">
+                            <img src="../assests/img/demo01.webp" alt>
+                            <div
+                                class="px-2 pb-3 lg:p-2 bottom-6 overflow-hidden absolute z-50 !h-max !w-[90%] left-1/2 -translate-x-1/2">
+
+                                <div class="translate-y-28 group-hover/main:-translate-y-0 duration-300">
+                                    <h2 class="text-2xl w-2/3 font-semibold text-white">
+                                        Om Nagar
+                                    </h2>
+                                    <p class="text-white font-medium text-sm mt-1 uppercase">2006</p>
+                                    <p class="text-white font-medium text-sm mt-1 uppercase">#most
+                                        affordable plots</p>
+                                    <p class="text-xs text-white mt-2">Started
+                                        in Om
+                                        Nagar and offered the most
+                                        affordable plots.</p>
+                                    <button class="flex items-center group w-max overflow-hidden">
+
+                                        <span
+                                            class="*:size-10 text-white mt-2 group-hover:-translate-x-10 duration-300">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 512 512" height="200px" width="200px"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-width="32" d="M400 256H112"></path>
+                                            </svg>
+                                        </span>
+                                        <a href="../assests/img/omnagarMap.jpg" data-fancybox
+                                            data-caption="Single image">
+                                            <span
+                                                class="text-white group-hover:-translate-x-10 duration-300 group-hover:text-theme1">View
+                                                Map
+                                            </span>
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
+                        <div
+                            class="w-full group/main aspect-[1/0.5] sm:aspect-square lg:aspect-[1/1.4] *:hover:scale-105 *:duration-500 overflow-hidden relative *:size-full *:object-cover after:absolute after:size-full after:bg-black/40 after:inset-0 after:hover:backdrop-blur-sm after:duration-500	">
+                            <img src="../assests/img/demo02.webp" alt>
+                            <div
+                                class="px-2 pb-3 lg:p-2 bottom-6 overflow-hidden absolute z-50 !h-max !w-[90%] left-1/2 -translate-x-1/2">
+
+                                <div class="translate-y-28 group-hover/main:-translate-y-0 duration-300">
+                                    <h2 class="text-2xl w-2/3 font-semibold text-white">
+                                        Keshargarh
+                                    </h2>
+                                    <p class="text-white font-medium text-sm mt-1 uppercase">2009</p>
+                                    <p class="text-white font-medium text-sm mt-1 uppercase">#Second
+                                        Project</p>
+                                    <p class="text-xs text-white mt-2">Our
+                                        Second
+                                        Project, Keshargarh, Has Been
+                                        Launched.</p>
+                                    <button class="flex items-center group w-max overflow-hidden">
+
+                                        <span
+                                            class="*:size-10 text-white mt-2 group-hover:-translate-x-10 duration-300">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 512 512" height="200px" width="200px"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-width="32" d="M400 256H112"></path>
+                                            </svg>
+                                        </span>
+                                        <!-- <a href="../assests/img/omnagarMap.jpg" data-fancybox
+                                            data-caption="Single image">
+                                            <span
+                                                class="text-white group-hover:-translate-x-10 duration-300 group-hover:text-theme1">View
+                                                Map
+                                            </span>
+                                        </a> -->
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="w-full group/main aspect-[1/0.5] sm:aspect-square lg:aspect-[1/1.4] *:hover:scale-105 *:duration-500 overflow-hidden relative *:size-full *:object-cover after:absolute after:size-full after:bg-black/40 after:inset-0 after:hover:backdrop-blur-sm after:duration-500	">
+                            <img src="../assests/img/demo03.webp" alt>
+                            <div
+                                class="px-2 pb-2 lg:p-2 bottom-6 overflow-hidden absolute z-50 !h-max !w-[90%] left-1/2 -translate-x-1/2">
+
+                                <div class="translate-y-28 group-hover/main:-translate-y-0 duration-300">
+                                    <h2 class="text-2xl w-full font-semibold text-white">
+                                        Sky Aangan Phase 1
+                                    </h2>
+                                    <p class="text-white font-medium text-sm mt-1 uppercase">2012</p>
+                                    <p class="text-white font-medium text-sm mt-1 uppercase">#largest
+                                        project </p>
+                                    <p class="text-xs text-white mt-2">Sky
+                                        Aangan Phase
+                                        1 has allowed us to reach new
+                                        clients outside
+                                        our usual circle.</p>
+                                    <button class="flex items-center group w-max overflow-hidden">
+
+                                        <span
+                                            class="*:size-10 text-white mt-2 group-hover:-translate-x-10 duration-300">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 512 512" height="200px" width="200px"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-width="32" d="M400 256H112"></path>
+                                            </svg>
+                                        </span>
+                                        <!-- <a href="../assests/img/omnagarMap.jpg" data-fancybox
+                                            data-caption="Single image">
+                                            <span
+                                                class="text-white group-hover:-translate-x-10 duration-300 group-hover:text-theme1">View
+                                                Map
+                                            </span>
+                                        </a> -->
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="w-full group/main aspect-[1/0.5] sm:aspect-square lg:aspect-[1/1.4] *:hover:scale-105 *:duration-500 overflow-hidden relative *:size-full *:object-cover after:absolute after:size-full after:bg-black/40 after:inset-0 after:hover:backdrop-blur-sm after:duration-500	">
+                            <img src="../assests/img/demo04.webp" alt>
+                            <div
+                                class="px-2 pb-2 lg:p-2 bottom-6 overflow-hidden absolute z-50 !h-max !w-[90%] left-1/2 -translate-x-1/2">
+
+                                <div class="translate-y-28 group-hover/main:-translate-y-0 duration-300">
+                                    <h2 class="text-2xl w-full font-semibold text-white">
+                                        Sky Aangan Phase 2
+                                    </h2>
+                                    <p class="text-white font-medium text-sm mt-1 uppercase">2014</p>
+                                    <p class="text-white font-medium text-sm mt-1 uppercase">Gurganv
+                                        office</p>
+                                    <p class="text-xs text-white mt-2">With
+                                        the launch
+                                        of our Gurganv office, we introduce
+                                        Sky Aangan
+                                        Phase 2.</p>
+                                    <button class="flex items-center group w-max overflow-hidden">
+
+                                        <span
+                                            class="*:size-10 text-white mt-2 group-hover:-translate-x-10 duration-300">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 512 512" height="200px" width="200px"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-width="32" d="M400 256H112"></path>
+                                            </svg>
+                                        </span>
+                                        <!-- <a href="../assests/img/omnagarMap.jpg" data-fancybox
+                                            data-caption="Single image">
+                                            <span
+                                                class="text-white group-hover:-translate-x-10 duration-300 group-hover:text-theme1">View
+                                                Map
+                                            </span>
+                                        </a> -->
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="w-full group/main aspect-[1/0.5] sm:aspect-square lg:aspect-[1/1.4] *:hover:scale-105 *:duration-500 overflow-hidden relative *:size-full *:object-cover after:absolute after:size-full after:bg-black/40 after:inset-0 after:hover:backdrop-blur-sm after:duration-500	">
+                            <img src="../assests/img/demo05.webp" alt>
+                            <div
+                                class="px-2 pb-2 lg:p-2 bottom-6 overflow-hidden absolute z-50 !h-max !w-[90%] left-1/2 -translate-x-1/2">
+
+                                <div class="translate-y-28 group-hover/main:-translate-y-0 duration-300">
+                                    <h2 class="text-2xl w-full font-semibold text-white">
+                                        Shyam Vatika
+                                    </h2>
+                                    <p class="text-white font-medium text-sm mt-1 uppercase">2023</p>
+                                    <p class="text-white font-medium text-sm mt-1 uppercase">#Sundarpura
+                                    </p>
+                                    <p class="text-xs text-white mt-2">Shyam
+                                        Vatika has
+                                        opened on Sundarpura Road.</p>
+                                    <button class="flex items-center group w-max overflow-hidden">
+
+                                        <span
+                                            class="*:size-10 text-white mt-2 group-hover:-translate-x-10 duration-300">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 512 512" height="200px" width="200px"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-width="32" d="M400 256H112"></path>
+                                            </svg>
+                                        </span>
+                                        <!-- <a href="../assests/img/omnagarMap.jpg" data-fancybox
+                                            data-caption="Single image">
+                                            <span
+                                                class="text-white group-hover:-translate-x-10 duration-300 group-hover:text-theme1">View
+                                                Map
+                                            </span>
+                                        </a> -->
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="w-full group/main aspect-[1/0.5] sm:aspect-square lg:aspect-[1/1.4] *:hover:scale-105 *:duration-500 overflow-hidden relative *:size-full *:object-cover after:absolute after:size-full after:bg-black/40 after:inset-0 after:hover:backdrop-blur-sm after:duration-500	">
+                            <img src="../assests/img/demo06.webp" alt>
+                            <div
+                                class="px-2 pb-2 lg:p-2 bottom-6 overflow-hidden absolute z-50 !h-max !w-[90%] left-1/2 -translate-x-1/2">
+
+                                <div class="translate-y-28 group-hover/main:-translate-y-0 duration-300">
+                                    <h2 class="text-2xl w-full font-semibold text-white">
+                                        Bhagwati Vihar
+                                    </h2>
+                                    <p class="text-white font-medium text-sm mt-1 uppercase">2024</p>
+                                    <p class="text-white font-medium text-sm mt-1 uppercase">#substantial
+                                        passive income</p>
+                                    <p class="text-xs text-white mt-2">Sky
+                                        Homes
+                                        introduced Bhagwati Vihar for generating
+                                        substantial
+                                        passive income.</p>
+                                    <button class="flex items-center group w-max overflow-hidden">
+
+                                        <span
+                                            class="*:size-10 text-white mt-2 group-hover:-translate-x-10 duration-300">
+                                            <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                                                viewBox="0 0 512 512" height="200px" width="200px"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path fill="none" stroke-linecap="round" stroke-linejoin="round"
+                                                    stroke-width="32" d="M400 256H112"></path>
+                                            </svg>
+                                        </span>
+                                        <a href="../assests/img/BHAGWATI VIHAR FINAL13-09-2022 -2-Model.pdf FINA;L 2.pdf"
+                                            data-fancybox data-caption="Single image">
+                                            <span
+                                                class="text-white group-hover:-translate-x-10 duration-300 group-hover:text-theme1">View
+                                                Map
+                                            </span>
+                                        </a>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- footer start -->
+    <footer class="mt-auto bg-gray-900 w-full">
+        <div class="mt-auto max-2xl:max-w-7xl 2xl:px-24 3xl:px-36  px-6 lg:px-8 w-full py-6 lg:pt-20 mx-auto">
+            <div class="grid grid-cols-3 sm:grid-cols-6 md:grid-cols-12 gap-6">
+                <div class="col-span-3">
+                    <a class="[filter:contrast(0)brightness(2)] flex-none inline-block 3xl:max-w-60 2xl:max-w-50 max-w-40 text-xl font-semibold text-white focus:outline-none focus:opacity-80"
+                        href="./index.html" aria-label="Brand">
+                        <img src="../assests/img/skyLogo.png" alt="logo" class="w-full h-full" />
+                    </a>
+                    <div class>
+                        <p class="text-white text-base">
+                            A Unit of Homkar Homes LLP
+                        </p>
+                        <p class="text-gray-400 text-base 2xl:text-lg 3xl:text-2xl py-5">
+                            A company that offers perfect land for your
+                            requirements. Sky Home was established in 2006
+                            in
+                            Kotputli and now proudly serves people
+                            throughout
+                            Rajasthan.
+                        </p>
                     </div>
                 </div>
 
-                <div
-                    class="mt-6 sm:mt-12 flex justify-center items-center border-t border-gray-600">
-                    <p
-                        class="text-sm  2xl:text-base 3xl:text-xl pt-6 text-gray-200">
-                        ©2024 Homkar Homes LLB. All Rights Reserved
+                <div class="col-span-3 md:mx-auto">
+                    <h4 class="font-semibold text-gray-100 text-base 2xl:text-lg 3xl:text-2xl">Company</h4>
+
+                    <div class="mt-3 grid space-y-3">
+                        <p>
+                            <a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
+                                href="./about.html">About Sky Homes</a>
+                        </p>
+                        <p>
+                            <a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
+                                href="./project.html">Projects</a>
+                        </p>
+                        <p>
+                            <a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
+                                href="./careers.html">Careers</a>
+                            <span
+                                class="inline-block ms-1 text-[10px] bg-theme2 text-white py-1 px-1.5 rounded-md">We're
+                                hiring</span>
+                        </p>
+                        <p>
+                            <a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
+                                href="./contact.html">Contact Us</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-span-3 md:mx-auto">
+                    <h4 class="font-semibold text-gray-100 text-base 2xl:text-lg 3xl:text-2xl">Projects</h4>
+
+                    <div class="mt-3 grid space-y-3">
+                        <p>
+                            <a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
+                                href="./shreeShyam.html">Shree Shyam Farmhouse</a>
+                        </p>
+                        <p>
+                            <a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
+                                href="./krishinaCity.html">Krishna City</a>
+                        </p>
+                        <p>
+                            <a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
+                                href="./atulyam.html">Atulyam</a>
+                        </p>
+                        <p>
+                            <a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
+                                href="javascript:;">Keshargarh</a>
+                        </p>
+                        <p>
+                            <a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
+                                href="javascript:;">Bhagwati Vihar</a>
+                        </p>
+                        <p>
+                            <a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
+                                href="javascript:;">Shyam Vatika</a>
+                        </p>
+                        <p>
+                            <a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
+                                href="javascript:;">Sky Aangan</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-span-3">
+                    <h4 class="font-semibold text-gray-100 text-base 2xl:text-lg 3xl:text-2xl">Social
+                        Media</h4>
+                    <p class="text-gray-400 text-base 2xl:text-lg 3xl:text-2xl py-5">
+                        Don't miss out—follow us on our social networks
                     </p>
+                    <div class="w-full flex flex-wrap items-center gap-2 pt-3">
+                        <a href="javascript:;"
+                            class="inline-flex group/social justify-center items-center bg-white mx-[5px] text-center relative overflow-hidden rounded-lg shadow-xl shadow-white/20 border-[3px] border-white duration-300 w-10 md:w-12 h-10 md:h-12 text-base before:bg-rose-500 before:w-[136%] before:h-[133%] before:absolute before:[transform:rotate(45deg)] before:top-[90%] before:-left-[110%] before:duration-300 text-rose-500 p-2 lg:p-3 2xl:p-2 hover:before:-top-[16%] hover:before:-left-[16%] before:ease-[cubic-bezier(0.31,-0.105,0.43,1.59)]">
+                            <svg class="size-full group-hover/social:text-white group-hover/social:scale-100 scale-95 duration-300"
+                                stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"
+                                height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="javascript:;"
+                            class="inline-flex group/social justify-center items-center bg-white mx-[5px] text-center relative overflow-hidden rounded-lg shadow-xl shadow-white/20 border-[3px] border-white duration-300 w-10 md:w-12 h-10 md:h-12 text-base before:bg-blue-900 before:w-[136%] before:h-[133%] before:absolute before:[transform:rotate(45deg)] before:top-[90%] before:-left-[110%] before:duration-300 text-blue-900 p-2 lg:p-3 2xl:p-2 hover:before:-top-[16%] hover:before:-left-[16%] before:ease-[cubic-bezier(0.31,-0.105,0.43,1.59)]">
+                            <svg class="size-full group-hover/social:text-white group-hover/social:scale-100 scale-95 duration-300"
+                                stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="javascript:;"
+                            class="inline-flex group/social justify-center items-center bg-white mx-[5px] text-center relative overflow-hidden rounded-lg shadow-xl shadow-white/20 border-[3px] border-white duration-300 w-10 md:w-12 h-10 md:h-12 text-base before:bg-black before:w-[136%] before:h-[133%] before:absolute before:[transform:rotate(45deg)] before:top-[90%] before:-left-[110%] before:duration-300 text-black p-2 lg:p-3 2xl:p-2 hover:before:-top-[16%] hover:before:-left-[16%] before:ease-[cubic-bezier(0.31,-0.105,0.43,1.59)]">
+                            <svg class="size-full group-hover/social:text-white group-hover/social:scale-100 scale-95 duration-300"
+                                stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                                height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="javascript:;"
+                            class="inline-flex group/social justify-center items-center bg-white mx-[5px] text-center relative overflow-hidden rounded-lg shadow-xl shadow-white/20 border-[3px] border-white duration-300 w-10 md:w-12 h-10 md:h-12 text-base before:bg-red-700 before:w-[136%] before:h-[133%] before:absolute before:[transform:rotate(45deg)] before:top-[90%] before:-left-[110%] before:duration-300 text-red-700 p-2 lg:p-3 2xl:p-2 hover:before:-top-[16%] hover:before:-left-[16%] before:ease-[cubic-bezier(0.31,-0.105,0.43,1.59)]">
+                            <svg class="size-full group-hover/social:text-white group-hover/social:scale-100 scale-95 duration-300"
+                                stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </footer>
-        <!-- footer Ends -->
 
-        <!-- side bar  -->
-        <input type="checkbox" class="peer/sideToggle hidden" name="sideToggle"
-            id="sideToggle" />
-        <label for="sideToggle"
-            class="fixed inset-0 -z-[1011] backdrop-blur-xl bg-sky-950/10 peer-checked/sideToggle:z-[1010] peer-checked/sideToggle:opacity-100 opacity-0 duration-100"></label>
+            <div class="mt-6 sm:mt-12 flex justify-center items-center border-t border-gray-600">
+                <p class="text-sm  2xl:text-base 3xl:text-xl pt-6 text-gray-200">
+                    ©2024 Homkar Homes LLP. All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer Ends -->
+
+    <!-- side bar  -->
+    <input type="checkbox" class="peer/sideToggle hidden" name="sideToggle" id="sideToggle" />
+    <label for="sideToggle"
+        class="fixed inset-0 -z-[1011] backdrop-blur-xl bg-sky-950/10 peer-checked/sideToggle:z-[1010] peer-checked/sideToggle:opacity-100 opacity-0 duration-100"></label>
+
+    <div
+        class="fixed flex flex-col h-screen inset-y-0 right-0 z-[1011] w-full overflow-y-auto bg-black/80 select-none text-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 peer-checked/sideToggle:translate-x-0 peer-checked/sideToggle:opacity-100 translate-x-full opacity-0 duration-300">
+        <div class="flex items-center justify-between">
+            <a href class="-ml-1.5">
+                <span class="sr-only">Sky Home</span>
+                <img class="h-7 w-auto invert" width="174" height="48" src="../assests/img/skyLogo.png" alt=" Logo" />
+            </a>
+            <label for="sideToggle" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-200">
+                <span class="sr-only">Close menu</span>
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                    aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </label>
+        </div>
+        <div class="mt-6 flow-root flex-fill -mr-4 pr-4">
+            <div class="-my-6 divide-y divide-gray-500/10">
+                <div class="space-y-2 py-6">
+                    <div class="flex flex-col gap-5 items-center">
+                        <div class="flex flex-col w-full gap-y-5">
+                            <a href="./index.html" class="flex items-center gap-x-[2px] text-sm font-bold text-gray-50">
+                                Home
+                            </a>
+                            <a href="./about.html" class="flex items-center gap-x-[2px] text-sm font-bold text-gray-50">
+                                About us
+                            </a>
+                            <a href="./careers.html"
+                                class="flex items-center gap-x-[2px] text-sm font-bold text-gray-50">
+                                Careers
+                            </a>
+                            <a href="./project.html" class="text-sm font-bold text-gray-50">Projects
+                            </a>
+                            <a href="./contact.html" class="text-sm font-bold text-gray-50">Contact
+                                Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="relative">
+        <input type="checkbox" id="dropdown-toggle" class="hidden peer" />
 
         <div
-            class="fixed flex flex-col h-screen inset-y-0 right-0 z-[1011] w-full overflow-y-auto bg-black/80 select-none text-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 peer-checked/sideToggle:translate-x-0 peer-checked/sideToggle:opacity-100 translate-x-full opacity-0 duration-300">
-            <div class="flex items-center justify-between">
-                <a href class="-ml-1.5">
-                    <span class="sr-only">Sky Home</span>
-                    <img class="h-7 w-auto invert" width="174" height="48"
-                        src="../assests/img/skyLogo.png" alt=" Logo" />
-                </a>
-                <label for="sideToggle" type="button"
-                    class="-m-2.5 rounded-md p-2.5 text-gray-200">
-                    <span class="sr-only">Close menu</span>
-                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                        stroke-width="1.5" stroke="currentColor"
-                        aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M6 18L18 6M6 6l12 12"></path>
-                    </svg>
-                </label>
-            </div>
-            <div class="mt-6 flow-root flex-fill -mr-4 pr-4">
-                <div class="-my-6 divide-y divide-gray-500/10">
-                    <div class="space-y-2 py-6">
-                        <div class="flex flex-col gap-5 items-center">
-                            <div class="flex flex-col w-full gap-y-5">
-                                <a href="./index.html"
-                                    class="flex items-center gap-x-[2px] text-sm font-bold text-gray-50">
-                                    Home
-                                </a>
-                                <a href="./about.html"
-                                    class="flex items-center gap-x-[2px] text-sm font-bold text-gray-50">
-                                    About us
-                                </a>
-                                <a href="./careers.html"
-                                    class="flex items-center gap-x-[2px] text-sm font-bold text-gray-50">
-                                    Careers
-                                </a>
-                                <a href="./project.html"
-                                    class="text-sm font-bold text-gray-50">Projects
-                                </a>
-                                <a href="./contact.html"
-                                    class="text-sm font-bold text-gray-50">Contact
-                                    Us</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            class="fixed top-14 inset-x-0 z-50 hidden mt-2 origin-top-left  divide-y divide-gray-100 rounded-md shadow-lg peer-checked:block">
+            <div class="relative w-full">
+                <input type="text"
+                    class="subscribe border border-gray-300 border-t-0 border-r-0 border-l-0 text-gray-900 text-sm block w-full pb-1.5 p-2.5 focus:!outline-0 focus:!shadow-none focus:!ring-0 focus:border-gray-400"
+                    placeholder="Search for products, brands and more" required>
             </div>
         </div>
+    </div>
+    <!-- side bar end -->
 
-        <div class="relative">
-            <input type="checkbox" id="dropdown-toggle" class="hidden peer" />
 
-            <div
-                class="fixed top-14 inset-x-0 z-50 hidden mt-2 origin-top-left  divide-y divide-gray-100 rounded-md shadow-lg peer-checked:block">
-                <div class="relative w-full">
-                    <input type="text"
-                        class="subscribe border border-gray-300 border-t-0 border-r-0 border-l-0 text-gray-900 text-sm block w-full pb-1.5 p-2.5 focus:!outline-0 focus:!shadow-none focus:!ring-0 focus:border-gray-400"
-                        placeholder="Search for products, brands and more"
-                        required>
-                </div>
-            </div>
-        </div>
-        <!-- side bar end -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script>
+        Fancybox.bind("[data-fancybox]", {
+            // Your custom options
+        });
+        // Fancybox.bind('[data-fancybox="gallery"]', {
+        //     // Your custom options for a specific gallery
+        // });
+    </script>
+    <script>
+        let tabsContainer = document.querySelector("#tabs");
 
-        <script>
-            let tabsContainer = document.querySelector("#tabs");
+        let tabTogglers = tabsContainer.querySelectorAll("#tabs a");
 
-            let tabTogglers = tabsContainer.querySelectorAll("#tabs a");
+        console.log(tabTogglers);
 
-            console.log(tabTogglers);
-
-            tabTogglers.forEach(function(toggler) {
-            toggler.addEventListener("click", function(e) {
+        tabTogglers.forEach(function (toggler) {
+            toggler.addEventListener("click", function (e) {
                 e.preventDefault();
 
                 let tabName = this.getAttribute("href");
@@ -890,18 +702,19 @@
                 let tabContents = document.querySelector("#tab-contents");
 
                 for (let i = 0; i < tabContents.children.length; i++) {
-                
-                tabTogglers[i].parentElement.classList.remove("border-t", "border-r", "border-l", "-mb-px", "bg-white");  tabContents.children[i].classList.remove("hidden");
-                if ("#" + tabContents.children[i].id === tabName) {
-                    continue;
-                }
-                tabContents.children[i].classList.add("hidden");
-                
+
+                    tabTogglers[i].parentElement.classList.remove("border-t", "border-r", "border-l", "-mb-px", "bg-white"); tabContents.children[i].classList.remove("hidden");
+                    if ("#" + tabContents.children[i].id === tabName) {
+                        continue;
+                    }
+                    tabContents.children[i].classList.add("hidden");
+
                 }
                 e.target.parentElement.classList.add("border-t", "border-r", "border-l", "-mb-px", "bg-white");
             });
-            });
+        });
 
-        </script>
-    </body>
+    </script>
+</body>
+
 </html>

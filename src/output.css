@@ -951,6 +951,18 @@ video {
   height: 100vh;
 }
 
+.\!h-auto {
+  height: auto !important;
+}
+
+.h-\[65dvh\] {
+  height: 65dvh;
+}
+
+.h-\[400px\] {
+  height: 400px;
+}
+
 .min-h-\[310px\] {
   min-height: 310px;
 }
@@ -1056,6 +1068,16 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.translate-y-36 {
+  --tw-translate-y: 9rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.translate-y-32 {
+  --tw-translate-y: 8rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .scale-95 {
   --tw-scale-x: .95;
   --tw-scale-y: .95;
@@ -1114,6 +1136,10 @@ video {
 
 .items-stretch {
   align-items: stretch;
+}
+
+.\!items-stretch {
+  align-items: stretch !important;
 }
 
 .justify-end {
@@ -1667,6 +1693,14 @@ video {
   padding-top: 1.5rem;
 }
 
+.pl-7 {
+  padding-left: 1.75rem;
+}
+
+.pl-3 {
+  padding-left: 0.75rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1843,6 +1877,16 @@ video {
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-red-500 {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.text-red-800 {
+  --tw-text-opacity: 1;
+  color: rgb(153 27 27 / var(--tw-text-opacity));
 }
 
 .placeholder-gray-500::-moz-placeholder {
@@ -3213,6 +3257,10 @@ video {
     aspect-ratio: 1/1.4;
   }
 
+  .lg\:aspect-\[1\/1\] {
+    aspect-ratio: 1/1;
+  }
+
   .lg\:size-60 {
     width: 15rem;
     height: 15rem;
@@ -3220,6 +3268,10 @@ video {
 
   .lg\:h-dvh {
     height: 100dvh;
+  }
+
+  .lg\:h-\[65dvh\] {
+    height: 65dvh;
   }
 
   .lg\:min-h-\[600px\] {
@@ -3254,9 +3306,18 @@ video {
     padding: 1.25rem;
   }
 
+  .lg\:p-1 {
+    padding: 0.25rem;
+  }
+
   .lg\:px-16 {
     padding-left: 4rem;
     padding-right: 4rem;
+  }
+
+  .lg\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
 
   .lg\:px-8 {
@@ -3277,6 +3338,16 @@ video {
   .lg\:py-20 {
     padding-top: 5rem;
     padding-bottom: 5rem;
+  }
+
+  .lg\:py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .lg\:py-5 {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
   }
 
   .lg\:pb-28 {
@@ -3501,6 +3572,134 @@ video {
     width: 3rem;
     height: 3rem;
   }
+}
+
+.\[\&_\.swiper-button-next\:after\]\:flex .swiper-button-next:after {
+  display: flex;
+}
+
+.\[\&_\.swiper-button-next\:after\]\:size-8 .swiper-button-next:after {
+  width: 2rem;
+  height: 2rem;
+}
+
+.\[\&_\.swiper-button-next\:after\]\:flex-shrink-0 .swiper-button-next:after {
+  flex-shrink: 0;
+}
+
+.\[\&_\.swiper-button-next\:after\]\:items-center .swiper-button-next:after {
+  align-items: center;
+}
+
+.\[\&_\.swiper-button-next\:after\]\:justify-center .swiper-button-next:after {
+  justify-content: center;
+}
+
+.\[\&_\.swiper-button-next\:after\]\:rounded-full .swiper-button-next:after {
+  border-radius: 9999px;
+}
+
+.\[\&_\.swiper-button-next\:after\]\:bg-white .swiper-button-next:after {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.\[\&_\.swiper-button-next\:after\]\:bg-theme2 .swiper-button-next:after {
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 61 107 / var(--tw-bg-opacity));
+}
+
+.\[\&_\.swiper-button-next\:after\]\:bg-theme1 .swiper-button-next:after {
+  --tw-bg-opacity: 1;
+  background-color: rgb(227 96 45 / var(--tw-bg-opacity));
+}
+
+.\[\&_\.swiper-button-next\:after\]\:text-lg .swiper-button-next:after {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.\[\&_\.swiper-button-next\:after\]\:font-bold .swiper-button-next:after {
+  font-weight: 700;
+}
+
+.\[\&_\.swiper-button-next\:after\]\:text-slate-900 .swiper-button-next:after {
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
+.\[\&_\.swiper-button-next\:after\]\:text-theme2 .swiper-button-next:after {
+  --tw-text-opacity: 1;
+  color: rgb(26 61 107 / var(--tw-text-opacity));
+}
+
+.\[\&_\.swiper-button-next\:after\]\:text-white .swiper-button-next:after {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.\[\&_\.swiper-button-prev\:after\]\:flex .swiper-button-prev:after {
+  display: flex;
+}
+
+.\[\&_\.swiper-button-prev\:after\]\:size-8 .swiper-button-prev:after {
+  width: 2rem;
+  height: 2rem;
+}
+
+.\[\&_\.swiper-button-prev\:after\]\:flex-shrink-0 .swiper-button-prev:after {
+  flex-shrink: 0;
+}
+
+.\[\&_\.swiper-button-prev\:after\]\:items-center .swiper-button-prev:after {
+  align-items: center;
+}
+
+.\[\&_\.swiper-button-prev\:after\]\:justify-center .swiper-button-prev:after {
+  justify-content: center;
+}
+
+.\[\&_\.swiper-button-prev\:after\]\:rounded-full .swiper-button-prev:after {
+  border-radius: 9999px;
+}
+
+.\[\&_\.swiper-button-prev\:after\]\:bg-white .swiper-button-prev:after {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.\[\&_\.swiper-button-prev\:after\]\:bg-theme1 .swiper-button-prev:after {
+  --tw-bg-opacity: 1;
+  background-color: rgb(227 96 45 / var(--tw-bg-opacity));
+}
+
+.\[\&_\.swiper-button-prev\:after\]\:bg-theme2 .swiper-button-prev:after {
+  --tw-bg-opacity: 1;
+  background-color: rgb(26 61 107 / var(--tw-bg-opacity));
+}
+
+.\[\&_\.swiper-button-prev\:after\]\:text-lg .swiper-button-prev:after {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.\[\&_\.swiper-button-prev\:after\]\:font-bold .swiper-button-prev:after {
+  font-weight: 700;
+}
+
+.\[\&_\.swiper-button-prev\:after\]\:text-slate-900 .swiper-button-prev:after {
+  --tw-text-opacity: 1;
+  color: rgb(15 23 42 / var(--tw-text-opacity));
+}
+
+.\[\&_\.swiper-button-prev\:after\]\:text-theme2 .swiper-button-prev:after {
+  --tw-text-opacity: 1;
+  color: rgb(26 61 107 / var(--tw-text-opacity));
+}
+
+.\[\&_\.swiper-button-prev\:after\]\:text-white .swiper-button-prev:after {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .\[\&_\.swiper-pagination-bullet-active\]\:\!w-6 .swiper-pagination-bullet-active {

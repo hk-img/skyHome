@@ -1,563 +1,516 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="./output.css" rel="stylesheet">
-    </head>
-    <body>
-        <!-- header start  -->
-        <header
-            class="px-5 md:px-8 lg:px-16 fixed z-[99] top-0 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap w-full text-sm">
-            <nav
-                class="mt-4 relative max-w-7xl w-full bg-white border border-gray-200 rounded-[2rem] py-2.5 md:flex md:items-center md:justify-between md:py-1.5 md:px-4 md:mx-auto">
-                <div class="px-4 flex justify-between items-center">
-                    <!-- Logo -->
-                    <div>
-                        <a
-                            class="h-8 md:h-12 flex-none rounded-md text-xl inline-block font-semibold focus:outline-none focus:opacity-80"
-                            href="./index.html"
-                            aria-label="Preline">
-                            <img src="../assests/img/skyLogo.png" alt
-                                class="size-full">
-                        </a>
-                    </div>
-                    <!-- End Logo -->
 
-                    <div class="md:hidden">
-                        <!-- Toggle Button -->
-                        <div class="flex lg:hidden">
-                            <label for="sideToggle"
-                                class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-black group-[]/nav:text-black">
-                                <span class="sr-only">Open menu</span>
-                                <svg class="size-7" fill="none"
-                                    viewBox="0 0 24 24" stroke-width="1.5"
-                                    stroke="currentColor"
-                                    aria-hidden="true">
-                                    <path stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5">
-                                    </path>
-                                </svg>
-                            </label>
-                        </div>
-                        <!-- End Toggle Button -->
-                    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header start  -->
+    <header
+        class="px-5 md:px-8 lg:px-16 fixed z-[99] top-0 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap w-full text-sm">
+        <nav
+            class="mt-4 relative max-w-7xl w-full bg-white border border-gray-200 rounded-[2rem] py-2.5 md:flex md:items-center md:justify-between md:py-1.5 md:px-4 md:mx-auto">
+            <div class="px-4 flex justify-between items-center">
+                <!-- Logo -->
+                <div>
+                    <a class="h-8 md:h-12 flex-none rounded-md text-xl inline-block font-semibold focus:outline-none focus:opacity-80"
+                        href="./index.html" aria-label="Preline">
+                        <img src="../assests/img/skyLogo.png" alt class="size-full">
+                    </a>
                 </div>
+                <!-- End Logo -->
 
-                <div id="hs-navbar-header-floating"
-                    class="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow md:block"
-                    aria-labelledby="hs-navbar-header-floating-collapse">
-                    <div
-                        class="flex flex-col md:flex-row md:items-center md:justify-end gap-2 md:gap-3 mt-3 md:mt-0 py-2 md:py-0 md:ps-7">
-                        <a
-                            class="px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 text-base font-bold text-gray-500 border-transparent focus:outline-none"
-                            href="./index.html" aria-current="page">Home</a>
-                        <a
-                            class="px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 text-base font-bold border-transparent text-gray-500 hover:text-gray-800 focus:outline-none"
-                            href="./about.html">About</a>
-                        <a
-                            class="px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 text-base font-bold border-transparent text-gray-500 hover:text-gray-800 focus:outline-none"
-                            href="./project.html">Projects</a>
-                        <a
-                            class="px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 text-base font-bold border-transparent text-gray-500 hover:text-gray-800 focus:outline-none"
-                            href="./careers.html">Careers</a>
-                        <a
-                            class="px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 text-base font-bold border-gray-800 text-gray-800 hover:text-gray-800 focus:outline-none"
-                            href="./contact.html">Contact Us</a>
+                <div class="md:hidden">
+                    <!-- Toggle Button -->
+                    <div class="flex lg:hidden">
+                        <label for="sideToggle"
+                            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-black group-[]/nav:text-black">
+                            <span class="sr-only">Open menu</span>
+                            <svg class="size-7" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                                aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5">
+                                </path>
+                            </svg>
+                        </label>
                     </div>
-                </div>
-            </nav>
-        </header>
-        <!-- header end  -->
-
-        <!-- hero section start -->
-        <section
-            class="h-[calc(100vh-70px)] bg-cover bg-no-repeat bg-center bg-[url(https://www.hyperlinkinfosystem.com/assets/img/about-us/contact-us-bg.jpg)] relative before:absolute before:size-full before:inset-0 before:bg-black/50">
-            <div class="mx-auto max-w-7xl px-6 lg:px-8 w-full h-full">
-                <div class="h-full flex flex-col justify-center relative z-10">
-                    <ul class="flex items-center gap-2">
-                        <li><a href="./index.html"
-                                class="text-theme1 font-bold">Home</a></li>
-                        <li class="text-white font-semibold">/</li>
-                        <li class=" text-white font-semibold">Contact Us</li>
-                    </ul>
-                    <div
-                        class="w-full sm:max-w-xl text-5xl sm:text-6xl text-white pt-5 leading-[130%] ">
-                        Connect with Us Anytime
-                        <div
-                            class="w-1/2 sm:w-[20%] h-[2px] bg-white mt-5"></div>
-                    </div>
+                    <!-- End Toggle Button -->
                 </div>
             </div>
-        </section>
-        <!-- hero section Ends -->
 
-        <!-- form start -->
-        <section class="contact-form  relative !z-10 -mt-10 sm:-mt-16">
-            <div class="mx-auto px-6 lg:px-8 w-full max-w-6xl ">
+            <div id="hs-navbar-header-floating"
+                class="hidden hs-collapse overflow-hidden transition-all duration-300 basis-full grow md:block"
+                aria-labelledby="hs-navbar-header-floating-collapse">
                 <div
-                    class="size-full rounded-xl bg-white p-4 sm:p-10 md:p-20 [box-shadow:0_4px_25px_0_rgba(0,_0,_0,_.06)] bg-no-repeat bg-contain  bg-bottom bg-[url(https://www.hyperlinkinfosystem.com/assets/img/contact-us.png)]">
-                    <div class="pb-5 text-3xl font-semibold text-theme1">
-                        Connect With Us
-                    </div>
-                    <div class="grid grid-cols-12 gap-6  ">
-                        <div class="col-span-12 sm:col-span-6 ">
-                            <div
-                                class="size-full px-4 py-2 border flex items-start gap-3">
-                                <div
-                                    class="flex justify-center flex-col h-full *:size-6">
-                                    <svg stroke="currentColor"
-                                        fill="currentColor" stroke-width="0"
-                                        viewBox="0 0 448 512" height="100%"
-                                        width="100%"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm95.8 32.6L272 480l-32-136 32-56h-96l32 56-32 136-47.8-191.4C56.9 292 0 350.3 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-72.1-56.9-130.4-128.2-133.8z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <div class="w-full">
-                                    <div class="leading-8 ps-1">Full Name</div>
-                                    <input type="text"
-                                        placeholder=" Enter Full Name"
-                                        class="w-full focus-visible:outline-0 focus-visible:border-0">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-span-12 sm:col-span-6 ">
-                            <div
-                                class="size-full px-4 py-2 border flex items-start gap-3">
-                                <div
-                                    class="flex justify-center flex-col h-full *:size-6">
-                                    <svg stroke="currentColor"
-                                        fill="currentColor" stroke-width="0"
-                                        viewBox="0 0 24 24" height="100%"
-                                        width="100%"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path fill="none"
-                                            d="M0 0h24v24H0z"></path>
-                                        <path
-                                            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <div class="w-full">
-                                    <div class="leading-8 ps-1">E-mail</div>
-                                    <input type="text"
-                                        placeholder=" Enter E-mail"
-                                        class="w-full focus-visible:outline-0 focus-visible:border-0">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-span-12 sm:col-span-6 ">
-                            <div
-                                class="size-full px-4 py-2 border flex items-start gap-3">
-                                <div
-                                    class="flex justify-center flex-col h-full *:size-6">
-                                    <svg stroke="currentColor"
-                                        fill="currentColor" stroke-width="0"
-                                        viewBox="0 0 512 512" height="100%"
-                                        width="100%"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M280 0C408.1 0 512 103.9 512 232c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-101.6-82.4-184-184-184c-13.3 0-24-10.7-24-24s10.7-24 24-24zm8 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm-32-72c0-13.3 10.7-24 24-24c75.1 0 136 60.9 136 136c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-48.6-39.4-88-88-88c-13.3 0-24-10.7-24-24zM117.5 1.4c19.4-5.3 39.7 4.6 47.4 23.2l40 96c6.8 16.3 2.1 35.2-11.6 46.3L144 207.3c33.3 70.4 90.3 127.4 160.7 160.7L345 318.7c11.2-13.7 30-18.4 46.3-11.6l96 40c18.6 7.7 28.5 28 23.2 47.4l-24 88C481.8 499.9 466 512 448 512C200.6 512 0 311.4 0 64C0 46 12.1 30.2 29.5 25.4l88-24z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <div class="w-full">
-                                    <div class="leading-8 ps-1">Contact
-                                        No.</div>
-                                    <input type="text"
-                                        placeholder=" Enter Contact No."
-                                        class="w-full focus-visible:outline-0 focus-visible:border-0">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-span-12 ">
-                            <div
-                                class="size-full px-4 py-2 border flex items-start gap-3">
-                                <div
-                                    class="flex justify-center flex-col h-full *:size-7 ">
-                                    <svg stroke="currentColor"
-                                        fill="currentColor" stroke-width="0"
-                                        viewBox="0 0 24 24" height="100%"
-                                        width="100%"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M20 2H4c-1.103 0-2 .894-2 1.992v12.016C2 17.106 2.897 18 4 18h3v4l6.351-4H20c1.103 0 2-.894 2-1.992V3.992A1.998 1.998 0 0 0 20 2zm-3 9h-4v4h-2v-4H7V9h4V5h2v4h4v2z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <div class="w-full">
-                                    <div class="leading-8 ">Message</div>
-                                    <textarea name
-                                        class="w-full focus-visible:outline-0 focus-visible:border-0"
-                                        rows="2" id
-                                        placeholder="Your Message"></textarea>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <button
-                        class="w-1/2 sm:w-[20%] bg-theme2 text-white mt-7 py-2 rounded-lg">Submit</button>
+                    class="flex flex-col md:flex-row md:items-center md:justify-end gap-2 md:gap-3 mt-3 md:mt-0 py-2 md:py-0 md:ps-7">
+                    <a class="px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 text-base font-bold text-gray-500 border-transparent focus:outline-none"
+                        href="./index.html" aria-current="page">Home</a>
+                    <a class="px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 text-base font-bold border-transparent text-gray-500 hover:text-gray-800 focus:outline-none"
+                        href="./about.html">About</a>
+                    <a class="px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 text-base font-bold border-transparent text-gray-500 hover:text-gray-800 focus:outline-none"
+                        href="./project.html">Projects</a>
+                    <a class="px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 text-base font-bold border-transparent text-gray-500 hover:text-gray-800 focus:outline-none"
+                        href="./careers.html">Careers</a>
+                    <a class="px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 text-base font-bold border-gray-800 text-gray-800 hover:text-gray-800 focus:outline-none"
+                        href="./contact.html">Contact Us</a>
                 </div>
             </div>
-        </section>
-        <!-- form Ends -->
+        </nav>
+    </header>
+    <!-- header end  -->
 
-        <!-- map section start -->
-        <section class="map-sec mb-10 mt-24 ">
-            <div class="mx-auto max-w-7xl px-6 lg:px-8 w-full">
-                <div class="w-full sm:w-1/2 pb-8">
-                    <div
-                        class="lg:text-6xl md:text-5xl text-4xl font-bold text-theme1">
-                        Our
-                        <span
-                            class="relative text-theme1 [-webkit-text-fill-color:transparent] lg:[-webkit-text-stroke-width:2px] [-webkit-text-stroke-width:1px] [-webkit-text-stroke-color:theme1]">
-                            Location</span>
-                    </div>
-                    <div class="my-5 h-[2px] bg-black w-1/2 sm:w-1/6"></div>
-                    <div class="text-sm sm:text-base sm:leading-8 ">
-                        Located in the heart of Rajasthan, we offer properties that are strategically positioned to meet diverse needs. Discover the best opportunities in a thriving area.
-                    </div>
-                </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div class="col-auto h-">
-                        <div class="size-full">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3558.391832754262!2d75.7382393106686!3d26.891056976562812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db5c6154fb3b7%3A0x3f40c1954de826b8!2sSky%20Homes!5e0!3m2!1sen!2sin!4v1726572273970!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </div>
-                    </div>
-                    <div class="col-auto">
-                        <div
-                            class="px-5  py-8 size-full group relative before:absolute before:size-16 before:bg-theme2 before:bottom-0 before:right-0 before:-z-10 before:hover:size-full before:duration-300 after:w-1/2 after:h-1 after:absolute after:bg-theme1 after:-top-1 after:right-0">
-                            <div
-                                class="text-4xl pb-6 font-semibold group-hover:text-white text-theme2">Rajasthan
-                                (HQ)</div>
-                            <div
-                                class="text-base leading-8 pb-4 pt-10 md:pt-20 lg:pt-28 group-hover:text-white">
-                                Near, Plot No 71-72, First Floor, Sharma Tower, Tagore Nagar Square, Ajmer Rd, DCM, Jaipur, Rajasthan 302021
-                            </div>
-                            <div class="lg:pb-28 md:pb-20 pb-10">
-                                <a href="javascript:;"
-                                    class="group-hover:text-white text-theme2 text-xl">+91-9529751500</a>
-                            </div>
-                            <div class="absolute bottom-6 right-6 *:size-4">
-                                <img class="size-full"
-                                    src="https://www.hyperlinkinfosystem.com/assets/img/map-pin.svg"
-                                    alt>
-                            </div>
-                            <div
-                                class="absolute -bottom-10 group-hover:-bottom-5 duration-700 opacity-0 md:opacity-100 w-40">
-                                <img
-                                    src="https://www.hyperlinkinfosystem.com/assets/img/dots-pattern.svg"
-                                    alt>
-                            </div>
-                        </div>
-                    </div>
+    <!-- hero section start -->
+    <section
+        class="h-[calc(100vh-70px)] bg-cover bg-no-repeat bg-center bg-[url(https://www.hyperlinkinfosystem.com/assets/img/about-us/contact-us-bg.jpg)] relative before:absolute before:size-full before:inset-0 before:bg-black/50">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8 w-full h-full">
+            <div class="h-full flex flex-col justify-center relative z-10">
+                <ul class="flex items-center gap-2">
+                    <li><a href="./index.html" class="text-theme1 font-bold">Home</a></li>
+                    <li class="text-white font-semibold">/</li>
+                    <li class=" text-white font-semibold">Contact Us</li>
+                </ul>
+                <div class="w-full sm:max-w-xl text-5xl sm:text-6xl text-white pt-5 leading-[130%] ">
+                    Connect with Us Anytime
+                    <div class="w-1/2 sm:w-[20%] h-[2px] bg-white mt-5"></div>
                 </div>
             </div>
-        </section>
-        <!-- map section Ends -->
+        </div>
+    </section>
+    <!-- hero section Ends -->
 
-        <!-- social cards start -->
-        <section class="socila-media py-16 border-t-2 border-b-2">
-            <div class="mx-auto max-w-7xl px-6 lg:px-8 w-full">
-                <div class="flex flex-col items-center">
-                    <div class="w-full sm:max-w-3xl mx-auto sm:px-5 align-middle text-center">
-                        <div
-                        class="lg:text-6xl md:text-5xl text-4xl font-bold text-theme1">
-                        Connect with the Top 
-                        <span
-                            class="relative text-theme1 [-webkit-text-fill-color:transparent] lg:[-webkit-text-stroke-width:2px] [-webkit-text-stroke-width:1px] [-webkit-text-stroke-color:theme1]">
-                            Real Estate Company!</span>
-                    </div>
-                        <div
-                            class="bg-black h-[2px] w-1/2 sm:w-[15%] mx-auto my-5"></div>
-                        <div
-                            class="text-center text-sm sm:text-base sm:leading-8 sm:px-10">
-                            Contact us with your real estate needs to turn your vision into reality. Our expertise and local knowledge ensure we bring your property goals to life.
-                        </div>
-                    </div>
-                </div>
-                <div
-                    class="grid-cols-1 grid sm:grid-cols-2 lg:grid-cols-3 gap-7 pt-10">
-                    <div class="col-auto">
-                        <div
-                            class="rounded-xl size-full flex flex-col justify-end p-4 md:p-10 h-80 bg-no-repeat  bg-cover bg-center bg-[url(https://www.hyperlinkinfosystem.com/assets/img/contact-email.jpg)]">
-                            <div class="text-white leading-8">E-mail</div>
-                            <div class>
-                                <a href="javascript:;"
-                                    class="text-white font-medium text-lg">info@hyperlinkinfosystem.com</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-auto">
-                        <div
-                            class="rounded-xl size-full flex flex-col justify-end p-4 md:p-10 h-80 bg-no-repeat  bg-cover bg-center bg-[url(https://www.hyperlinkinfosystem.com/assets/img/contact-phone.jpg)]">
-                            <div class="text-white leading-8">Phone</div>
-                            <div class>
-                                <a href="javascript:;"
-                                    class="text-white font-medium text-lg">+91
-                                    8000-161-161</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-auto">
-                        <div
-                            class="rounded-xl size-full flex flex-col justify-end p-4 md:p-10 h-80 bg-no-repeat  bg-cover bg-center bg-[url(https://www.hyperlinkinfosystem.com/assets/img/contact-skype.jpg)]">
-                            <div class="text-white leading-8">Skype</div>
-                            <div class>
-                                <a href="javascript:;"
-                                    class="text-white font-medium text-lg">hyperlink.infosystem</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- social cards Ends -->
-
-        <!-- footer start -->
-        <footer class="mt-auto bg-gray-900 w-full">
+    <!-- form start -->
+    <section class="contact-form  relative !z-10 -mt-10 sm:-mt-16">
+        <div class="mx-auto px-6 lg:px-8 w-full max-w-6xl ">
             <div
-                class="mt-auto max-2xl:max-w-7xl 2xl:px-24 3xl:px-36  px-6 lg:px-8 w-full py-6 lg:pt-20 mx-auto">
-                <div
-                    class="grid grid-cols-3 sm:grid-cols-6 md:grid-cols-12 gap-6">
-                    <div class="col-span-3">
-                        <a
-                            class="[filter:contrast(0)brightness(2)] flex-none inline-block 3xl:max-w-60 2xl:max-w-50 max-w-40 text-xl font-semibold text-white focus:outline-none focus:opacity-80"
-                            href="./index.html" aria-label="Brand">
-                            <img src="../assests/img/skyLogo.png" alt="logo"
-                                class="w-full h-full" />
-                        </a>
-                        <div class="">
-                            <p
-                                class="text-white text-base">
-                                A Unit of Homkar Homes LLB 
-                            </p>
-                            <p
-                                class="text-gray-400 text-base 2xl:text-lg 3xl:text-2xl py-5">
-                                A company that offers perfect land for your
-                                requirements. Sky Home was established in 2006 in
-                                Kotputli and now proudly serves people throughout
-                                Rajasthan.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-span-3 md:mx-auto">
-                        <h4
-                            class="font-semibold text-gray-100 text-base 2xl:text-lg 3xl:text-2xl">Company</h4>
-
-                        <div class="mt-3 grid space-y-3">
-                            <p>
-                                <a
-                                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
-                                    href="./about.html">About Sky Homes</a>
-                            </p>
-                            <p>
-                                <a
-                                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
-                                    href="./project.html">Projects</a>
-                            </p>
-                            <p>
-                                <a
-                                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
-                                    href="./careers.html">Careers</a>
-                                <span
-                                    class="inline-block ms-1 text-[10px] bg-theme2 text-white py-1 px-1.5 rounded-md">We're
-                                    hiring</span>
-                            </p>
-                            <p>
-                                <a
-                                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
-                                    href="./contact.html">Contact Us</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-span-3 md:mx-auto">
-                        <h4
-                            class="font-semibold text-gray-100 text-base 2xl:text-lg 3xl:text-2xl">Projects</h4>
-
-                        <div class="mt-3 grid space-y-3">
-                            <p>
-                                <a
-                                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
-                                    href="javascript:;">Om Nagar</a>
-                            </p>
-                            <p>
-                                <a
-                                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
-                                    href="javascript:;">Keshargarh</a>
-                            </p>
-                            <p>
-                                <a
-                                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
-                                    href="javascript:;">Sky Aangan</a>
-                            </p>
-                            <p>
-                                <a
-                                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
-                                    href="javascript:;">Krishna City</a>
-                            </p>
-                            <p>
-                                <a
-                                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
-                                    href="javascript:;">Bhagwati Vihar</a>
-                            </p>
-                            <p>
-                                <a
-                                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
-                                    href="javascript:;">Shyam Vatika</a>
-                            </p>
-                            <p>
-                                <a
-                                    class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
-                                    href="javascript:;">ATULYAM</a>
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="col-span-3">
-                        <h4
-                            class="font-semibold text-gray-100 text-base 2xl:text-lg 3xl:text-2xl">Social
-                            Media</h4>
-                        <p
-                            class="text-gray-400 text-base 2xl:text-lg 3xl:text-2xl py-5">
-                            Don't miss out—follow us on our social networks
-                        </p>
-                        <div
-                            class="w-full flex flex-wrap items-center gap-2 pt-3">
-                            <a href="javascript:;"
-                                class="inline-flex group/social justify-center items-center bg-white mx-[5px] text-center relative overflow-hidden rounded-lg shadow-xl shadow-white/20 border-[3px] border-white duration-300 w-10 md:w-12 h-10 md:h-12 text-base before:bg-rose-500 before:w-[136%] before:h-[133%] before:absolute before:[transform:rotate(45deg)] before:top-[90%] before:-left-[110%] before:duration-300 text-rose-500 p-2 lg:p-3 2xl:p-2 hover:before:-top-[16%] hover:before:-left-[16%] before:ease-[cubic-bezier(0.31,-0.105,0.43,1.59)]">
-                                <svg
-                                    class="size-full group-hover/social:text-white group-hover/social:scale-100 scale-95 duration-300"
-                                    stroke="currentColor" fill="currentColor"
-                                    stroke-width="0" viewBox="0 0 448 512"
-                                    height="200px" width="200px"
-                                    xmlns="http://www.w3.org/2000/svg"><path
-                                        d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
-                            </a>
-                            <a href="javascript:;"
-                                class="inline-flex group/social justify-center items-center bg-white mx-[5px] text-center relative overflow-hidden rounded-lg shadow-xl shadow-white/20 border-[3px] border-white duration-300 w-10 md:w-12 h-10 md:h-12 text-base before:bg-blue-900 before:w-[136%] before:h-[133%] before:absolute before:[transform:rotate(45deg)] before:top-[90%] before:-left-[110%] before:duration-300 text-blue-900 p-2 lg:p-3 2xl:p-2 hover:before:-top-[16%] hover:before:-left-[16%] before:ease-[cubic-bezier(0.31,-0.105,0.43,1.59)]">
-                                <svg
-                                    class="size-full group-hover/social:text-white group-hover/social:scale-100 scale-95 duration-300"
-                                    stroke="currentColor" fill="currentColor"
-                                    stroke-width="0" viewBox="0 0 320 512"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
-                                    </path>
-                                </svg>
-                            </a>
-                            <a href="javascript:;"
-                                class="inline-flex group/social justify-center items-center bg-white mx-[5px] text-center relative overflow-hidden rounded-lg shadow-xl shadow-white/20 border-[3px] border-white duration-300 w-10 md:w-12 h-10 md:h-12 text-base before:bg-black before:w-[136%] before:h-[133%] before:absolute before:[transform:rotate(45deg)] before:top-[90%] before:-left-[110%] before:duration-300 text-black p-2 lg:p-3 2xl:p-2 hover:before:-top-[16%] hover:before:-left-[16%] before:ease-[cubic-bezier(0.31,-0.105,0.43,1.59)]">
-                                <svg
-                                    class="size-full group-hover/social:text-white group-hover/social:scale-100 scale-95 duration-300"
-                                    stroke="currentColor" fill="currentColor"
-                                    stroke-width="0" viewBox="0 0 512 512"
-                                    height="200px" width="200px"
-                                    xmlns="http://www.w3.org/2000/svg"><path
-                                        d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"></path></svg>
-                            </a>
-                            <a href="javascript:;"
-                                class="inline-flex group/social justify-center items-center bg-white mx-[5px] text-center relative overflow-hidden rounded-lg shadow-xl shadow-white/20 border-[3px] border-white duration-300 w-10 md:w-12 h-10 md:h-12 text-base before:bg-red-700 before:w-[136%] before:h-[133%] before:absolute before:[transform:rotate(45deg)] before:top-[90%] before:-left-[110%] before:duration-300 text-red-700 p-2 lg:p-3 2xl:p-2 hover:before:-top-[16%] hover:before:-left-[16%] before:ease-[cubic-bezier(0.31,-0.105,0.43,1.59)]">
-                                <svg
-                                    class="size-full group-hover/social:text-white group-hover/social:scale-100 scale-95 duration-300"
-                                    stroke="currentColor" fill="currentColor"
-                                    stroke-width="0" viewBox="0 0 576 512"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
-                                    </path>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
+                class="size-full rounded-xl bg-white p-4 sm:p-10 md:p-20 [box-shadow:0_4px_25px_0_rgba(0,_0,_0,_.06)] bg-no-repeat bg-contain  bg-bottom bg-[url(https://www.hyperlinkinfosystem.com/assets/img/contact-us.png)]">
+                <div class="pb-5 text-3xl font-semibold text-theme1">
+                    Connect With Us
                 </div>
+                <div class="grid grid-cols-12 gap-6  ">
+                    <div class="col-span-12 sm:col-span-6 ">
+                        <div class="size-full px-4 py-2 border flex items-start gap-3">
+                            <div class="flex justify-center flex-col h-full *:size-6">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"
+                                    height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm95.8 32.6L272 480l-32-136 32-56h-96l32 56-32 136-47.8-191.4C56.9 292 0 350.3 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-72.1-56.9-130.4-128.2-133.8z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="w-full">
+                                <label for="fullName" class="leading-8 ps-1">Full Name <span
+                                        class="text-red-500">*</span></label>
+                                <input id="fullName" type="text" placeholder=" Enter Full Name"
+                                    class="w-full focus-visible:outline-0 focus-visible:border-0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-12 sm:col-span-6 ">
+                        <div class="size-full px-4 py-2 border flex items-start gap-3">
+                            <div class="flex justify-center flex-col h-full *:size-6">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                    height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill="none" d="M0 0h24v24H0z"></path>
+                                    <path
+                                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="w-full">
+                                <label for="E-mail" class="leading-8 ps-1">E-mail</label>
+                                <input type="email" id="E-mail" placeholder=" Enter E-mail"
+                                    class="w-full focus-visible:outline-0 focus-visible:border-0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-12 sm:col-span-6 ">
+                        <div class="size-full px-4 py-2 border flex items-start gap-3">
+                            <div class="flex justify-center flex-col h-full *:size-6">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                                    height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M280 0C408.1 0 512 103.9 512 232c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-101.6-82.4-184-184-184c-13.3 0-24-10.7-24-24s10.7-24 24-24zm8 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm-32-72c0-13.3 10.7-24 24-24c75.1 0 136 60.9 136 136c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-48.6-39.4-88-88-88c-13.3 0-24-10.7-24-24zM117.5 1.4c19.4-5.3 39.7 4.6 47.4 23.2l40 96c6.8 16.3 2.1 35.2-11.6 46.3L144 207.3c33.3 70.4 90.3 127.4 160.7 160.7L345 318.7c11.2-13.7 30-18.4 46.3-11.6l96 40c18.6 7.7 28.5 28 23.2 47.4l-24 88C481.8 499.9 466 512 448 512C200.6 512 0 311.4 0 64C0 46 12.1 30.2 29.5 25.4l88-24z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="w-full">
+                                <label for="Contact" class="leading-8 ps-1">Mobile No <span
+                                        class="text-red-500">*</span></label>
+                                <input type="tel" id="Contact" placeholder=" Enter Mobile No."
+                                    class="w-full focus-visible:outline-0 focus-visible:border-0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-span-12 ">
+                        <div class="size-full px-4 py-2 border flex items-start gap-3">
+                            <div class="flex justify-center flex-col h-full *:size-7 ">
+                                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                    height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20 2H4c-1.103 0-2 .894-2 1.992v12.016C2 17.106 2.897 18 4 18h3v4l6.351-4H20c1.103 0 2-.894 2-1.992V3.992A1.998 1.998 0 0 0 20 2zm-3 9h-4v4h-2v-4H7V9h4V5h2v4h4v2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div class="w-full">
+                                <label for="Message" class="leading-8 ps-1">Message</label>
+                                <textarea name id="Message"
+                                    class="w-full focus-visible:outline-0 focus-visible:border-0" rows="2" id
+                                    placeholder="Your Message"></textarea>
+                            </div>
+                        </div>
+                    </div>
 
-                <div
-                    class="mt-6 sm:mt-12 flex justify-center items-center border-t border-gray-600">
-                    <p
-                        class="text-sm  2xl:text-base 3xl:text-xl pt-6 text-gray-200">
-                        ©2024 Homkar Homes LLB. All Rights Reserved
-                    </p>
+                </div>
+                <button class="w-1/2 sm:w-[20%] bg-theme2 text-white mt-7 py-2 rounded-lg">Submit</button>
+            </div>
+        </div>
+    </section>
+    <!-- form Ends -->
+
+    <!-- map section start -->
+    <section class="map-sec mb-10 mt-24 ">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8 w-full">
+            <div class="w-full sm:w-1/2 pb-8">
+                <div class="lg:text-6xl md:text-5xl text-4xl font-bold text-theme1">
+                    Our
+                    <span
+                        class="relative text-theme1 [-webkit-text-fill-color:transparent] lg:[-webkit-text-stroke-width:2px] [-webkit-text-stroke-width:1px] [-webkit-text-stroke-color:theme1]">
+                        Location</span>
+                </div>
+                <div class="my-5 h-[2px] bg-black w-1/2 sm:w-1/6"></div>
+                <div class="text-sm sm:text-base sm:leading-8 ">
+                    Located in the heart of Rajasthan, we offer properties that are strategically positioned to meet
+                    diverse needs. Discover the best opportunities in a thriving area.
                 </div>
             </div>
-        </footer>
-        <!-- footer Ends -->
+            <div class="grid grid-cols-1 gap-4">
+                <div class="col-auto">
+                    <div
+                        class="px-5  py-8 size-full group relative before:absolute before:size-16 before:bg-theme2 before:bottom-0 before:right-0 before:-z-10 before:hover:size-full before:duration-300 after:w-1/2 after:h-1 after:absolute after:bg-theme1 after:-top-1 after:right-0">
+                        <div class="text-4xl pb-6 font-semibold group-hover:text-white text-theme2">Rajasthan
+                            (HQ)</div>
+                        <div class="text-base leading-8 pb-4 pt-10 md:pt-20 lg:pt-28 group-hover:text-white">
+                            18, on, Police Station, NH 48 B, Mode, opposite Paniyala, Paniyala, Kotputli, Rajasthan
+                            303108
+                        </div>
+                        <div class="lg:pb-28 md:pb-20 pb-10">
+                            <a href="tel:+919266061212" class="group-hover:text-white text-theme2 text-xl">+91
+                                9266061212</a>
+                            <a href="tel:+919529751500"
+                                class="group-hover:text-white text-theme2 text-xl pl-7">+91-9529751500</a>
+                        </div>
+                        <div class="absolute bottom-6 right-6 *:size-4">
+                            <img class="size-full" src="https://www.hyperlinkinfosystem.com/assets/img/map-pin.svg" alt>
+                        </div>
+                        <div
+                            class="absolute -bottom-10 group-hover:-bottom-5 duration-700 opacity-0 md:opacity-100 w-40">
+                            <img src="https://www.hyperlinkinfosystem.com/assets/img/dots-pattern.svg" alt>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto h-[400px]">
+                    <div class="size-full">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3529.6489803268196!2d76.216904!3d27.789788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396d4fab7d7ae07d%3A0x62c8482127ef6c39!2sSKY%20HOMES!5e0!3m2!1sen!2sin!4v1728465437417!5m2!1sen!2sin"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div
+                        class="px-5  py-8 size-full group relative before:absolute before:size-16 before:bg-theme2 before:bottom-0 before:right-0 before:-z-10 before:hover:size-full before:duration-300 after:w-1/2 after:h-1 after:absolute after:bg-theme1 after:-top-1 after:right-0">
+                        <div class="text-4xl pb-6 font-semibold group-hover:text-white text-theme2">SKY HOMES
+                            (Branch Office)</div>
+                        <div class="text-base leading-8 pb-4 pt-10 md:pt-20 lg:pt-28 group-hover:text-white">
+                            SKY HOMES .
+                            NEW PALAM VIHAR PHASE 1
+                            SECTOR 110, DWARKA EXPRESSWAY GURUGRAM
+                        </div>
+                        <div class="lg:pb-28 md:pb-20 pb-10">
+                            <a href="tel:+919266061212" class="group-hover:text-white text-theme2 text-xl">+91
+                                9266061212</a>
+                            <a href="tel:+919529751500"
+                                class="group-hover:text-white text-theme2 text-xl pl-7">+91-9529751500</a>
+                        </div>
+                        <div class="absolute bottom-6 right-6 *:size-4">
+                            <img class="size-full" src="https://www.hyperlinkinfosystem.com/assets/img/map-pin.svg" alt>
+                        </div>
+                        <div
+                            class="absolute -bottom-10 group-hover:-bottom-5 duration-700 opacity-0 md:opacity-100 w-40">
+                            <img src="https://www.hyperlinkinfosystem.com/assets/img/dots-pattern.svg" alt>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto h-[400px]">
+                    <div class="size-full">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3506.1958939360834!2d77.01110039999999!3d28.503753399999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d17007cc5fe23%3A0x3c3bce1fbf93c46b!2sSKY%20HOMES!5e0!3m2!1sen!2sin!4v1728465897382!5m2!1sen!2sin"
+                            width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- map section Ends -->
 
-        <!-- side bar  -->
-        <input type="checkbox" class="peer/sideToggle hidden" name="sideToggle"
-            id="sideToggle" />
-        <label for="sideToggle"
-            class="fixed inset-0 -z-[1011] backdrop-blur-xl bg-sky-950/10 peer-checked/sideToggle:z-[1010] peer-checked/sideToggle:opacity-100 opacity-0 duration-100"></label>
+    <!-- social cards start -->
+    <section class="socila-media py-16 border-t-2 border-b-2">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8 w-full">
+            <div class="flex flex-col items-center">
+                <div class="w-full sm:max-w-3xl mx-auto sm:px-5 align-middle text-center">
+                    <div class="lg:text-6xl md:text-5xl text-4xl font-bold text-theme1">
+                        Coffee With US
+                        <span
+                            class="relative text-theme1 [-webkit-text-fill-color:transparent] lg:[-webkit-text-stroke-width:2px] [-webkit-text-stroke-width:1px] [-webkit-text-stroke-color:theme1]">
+                        </span>
+                    </div>
+                    <div class="bg-black h-[2px] w-1/2 sm:w-[15%] mx-auto my-5"></div>
+                    <div class="text-center text-sm sm:text-base sm:leading-8 sm:px-10">
+                        Contact us with your real estate needs to turn your vision into reality. Our expertise and local
+                        knowledge ensure we bring your property goals to life.
+                    </div>
+                </div>
+            </div>
+            <div class="grid-cols-1 grid sm:grid-cols-2 lg:grid-cols-3 gap-7 pt-10">
+                <div class="col-auto">
+                    <div
+                        class="rounded-xl size-full flex flex-col justify-end p-4 md:p-10 h-80 bg-no-repeat  bg-cover bg-center bg-[url(https://www.hyperlinkinfosystem.com/assets/img/contact-email.jpg)]">
+                        <div class="text-white leading-8">E-mail</div>
+                        <div class>
+                            <a href="javascript:;" class="text-white font-medium text-lg">user@examplegmail.com</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div
+                        class="rounded-xl size-full flex flex-col justify-end p-4 md:p-10 h-80 bg-no-repeat  bg-cover bg-center bg-[url(https://www.hyperlinkinfosystem.com/assets/img/contact-phone.jpg)]">
+                        <div class="text-white leading-8">Mobile No.</div>
+                        <div class>
+                            <a href="tel:+919266061212" class="text-white font-medium text-lg">+91 92 660-612-12 </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div
+                        class="rounded-xl size-full flex flex-col justify-end p-4 md:p-10 h-80 bg-no-repeat  bg-cover bg-center bg-[url(https://www.hyperlinkinfosystem.com/assets/img/contact-phone.jpg)]">
+                        <div class="text-white leading-8">Mobile No.</div>
+                        <div class>
+                            <a href="tel:+919529751500" class="text-white font-medium text-lg">+91 95
+                                297-515-00</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- social cards Ends -->
+
+    <!-- footer start -->
+    <footer class="mt-auto bg-gray-900 w-full">
+        <div class="mt-auto max-2xl:max-w-7xl 2xl:px-24 3xl:px-36  px-6 lg:px-8 w-full py-6 lg:pt-20 mx-auto">
+            <div class="grid grid-cols-3 sm:grid-cols-6 md:grid-cols-12 gap-6">
+                <div class="col-span-3">
+                    <a class="[filter:contrast(0)brightness(2)] flex-none inline-block 3xl:max-w-60 2xl:max-w-50 max-w-40 text-xl font-semibold text-white focus:outline-none focus:opacity-80"
+                        href="./index.html" aria-label="Brand">
+                        <img src="../assests/img/skyLogo.png" alt="logo" class="w-full h-full" />
+                    </a>
+                    <div class="">
+                        <p class="text-white text-base">
+                            A Unit of Homkar Homes LLP
+                        </p>
+                        <p class="text-gray-400 text-base 2xl:text-lg 3xl:text-2xl py-5">
+                            A company that offers perfect land for your
+                            requirements. Sky Home was established in 2006 in
+                            Kotputli and now proudly serves people throughout
+                            Rajasthan.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-span-3 md:mx-auto">
+                    <h4 class="font-semibold text-gray-100 text-base 2xl:text-lg 3xl:text-2xl">Company</h4>
+
+                    <div class="mt-3 grid space-y-3">
+                        <p>
+                            <a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
+                                href="./about.html">About Sky Homes</a>
+                        </p>
+                        <p>
+                            <a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
+                                href="./project.html">Projects</a>
+                        </p>
+                        <p>
+                            <a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
+                                href="./careers.html">Careers</a>
+                            <span
+                                class="inline-block ms-1 text-[10px] bg-theme2 text-white py-1 px-1.5 rounded-md">We're
+                                hiring</span>
+                        </p>
+                        <p>
+                            <a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
+                                href="./contact.html">Contact Us</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-span-3 md:mx-auto">
+                    <h4 class="font-semibold text-gray-100 text-base 2xl:text-lg 3xl:text-2xl">Projects</h4>
+
+                    <div class="mt-3 grid space-y-3">
+                        <p>
+                            <a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
+                                href="./shreeShyam.html">Shree Shyam Farmhouse</a>
+                        </p>
+                        <p>
+                            <a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
+                                href="./krishinaCity.html">Krishna City</a>
+                        </p>
+                        <p>
+                            <a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
+                                href="./atulyam.html">Atulyam</a>
+                        </p>
+                        <p>
+                            <a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
+                                href="javascript:;">Keshargarh</a>
+                        </p>
+                        <p>
+                            <a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
+                                href="javascript:;">Bhagwati Vihar</a>
+                        </p>
+                        <p>
+                            <a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
+                                href="javascript:;">Shyam Vatika</a>
+                        </p>
+                        <p>
+                            <a class="inline-flex gap-x-2 text-gray-400 hover:text-gray-200 focus:outline-none focus:text-gray-200 text-base 2xl:text-lg 3xl:text-2xl"
+                                href="javascript:;">Sky Aangan</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-span-3">
+                    <h4 class="font-semibold text-gray-100 text-base 2xl:text-lg 3xl:text-2xl">Social
+                        Media</h4>
+                    <p class="text-gray-400 text-base 2xl:text-lg 3xl:text-2xl py-5">
+                        Don't miss out—follow us on our social networks
+                    </p>
+                    <div class="w-full flex flex-wrap items-center gap-2 pt-3">
+                        <a href="javascript:;"
+                            class="inline-flex group/social justify-center items-center bg-white mx-[5px] text-center relative overflow-hidden rounded-lg shadow-xl shadow-white/20 border-[3px] border-white duration-300 w-10 md:w-12 h-10 md:h-12 text-base before:bg-rose-500 before:w-[136%] before:h-[133%] before:absolute before:[transform:rotate(45deg)] before:top-[90%] before:-left-[110%] before:duration-300 text-rose-500 p-2 lg:p-3 2xl:p-2 hover:before:-top-[16%] hover:before:-left-[16%] before:ease-[cubic-bezier(0.31,-0.105,0.43,1.59)]">
+                            <svg class="size-full group-hover/social:text-white group-hover/social:scale-100 scale-95 duration-300"
+                                stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"
+                                height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="javascript:;"
+                            class="inline-flex group/social justify-center items-center bg-white mx-[5px] text-center relative overflow-hidden rounded-lg shadow-xl shadow-white/20 border-[3px] border-white duration-300 w-10 md:w-12 h-10 md:h-12 text-base before:bg-blue-900 before:w-[136%] before:h-[133%] before:absolute before:[transform:rotate(45deg)] before:top-[90%] before:-left-[110%] before:duration-300 text-blue-900 p-2 lg:p-3 2xl:p-2 hover:before:-top-[16%] hover:before:-left-[16%] before:ease-[cubic-bezier(0.31,-0.105,0.43,1.59)]">
+                            <svg class="size-full group-hover/social:text-white group-hover/social:scale-100 scale-95 duration-300"
+                                stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="javascript:;"
+                            class="inline-flex group/social justify-center items-center bg-white mx-[5px] text-center relative overflow-hidden rounded-lg shadow-xl shadow-white/20 border-[3px] border-white duration-300 w-10 md:w-12 h-10 md:h-12 text-base before:bg-black before:w-[136%] before:h-[133%] before:absolute before:[transform:rotate(45deg)] before:top-[90%] before:-left-[110%] before:duration-300 text-black p-2 lg:p-3 2xl:p-2 hover:before:-top-[16%] hover:before:-left-[16%] before:ease-[cubic-bezier(0.31,-0.105,0.43,1.59)]">
+                            <svg class="size-full group-hover/social:text-white group-hover/social:scale-100 scale-95 duration-300"
+                                stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                                height="200px" width="200px" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z">
+                                </path>
+                            </svg>
+                        </a>
+                        <a href="javascript:;"
+                            class="inline-flex group/social justify-center items-center bg-white mx-[5px] text-center relative overflow-hidden rounded-lg shadow-xl shadow-white/20 border-[3px] border-white duration-300 w-10 md:w-12 h-10 md:h-12 text-base before:bg-red-700 before:w-[136%] before:h-[133%] before:absolute before:[transform:rotate(45deg)] before:top-[90%] before:-left-[110%] before:duration-300 text-red-700 p-2 lg:p-3 2xl:p-2 hover:before:-top-[16%] hover:before:-left-[16%] before:ease-[cubic-bezier(0.31,-0.105,0.43,1.59)]">
+                            <svg class="size-full group-hover/social:text-white group-hover/social:scale-100 scale-95 duration-300"
+                                stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 576 512"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-6 sm:mt-12 flex justify-center items-center border-t border-gray-600">
+                <p class="text-sm  2xl:text-base 3xl:text-xl pt-6 text-gray-200">
+                    ©2024 Homkar Homes LLP. All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer Ends -->
+
+    <!-- side bar  -->
+    <input type="checkbox" class="peer/sideToggle hidden" name="sideToggle" id="sideToggle" />
+    <label for="sideToggle"
+        class="fixed inset-0 -z-[1011] backdrop-blur-xl bg-sky-950/10 peer-checked/sideToggle:z-[1010] peer-checked/sideToggle:opacity-100 opacity-0 duration-100"></label>
+
+    <div
+        class="fixed flex flex-col h-screen inset-y-0 right-0 z-[1011] w-full overflow-y-auto bg-black/80 select-none text-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 peer-checked/sideToggle:translate-x-0 peer-checked/sideToggle:opacity-100 translate-x-full opacity-0 duration-300">
+        <div class="flex items-center justify-between">
+            <a href class="-ml-1.5">
+                <span class="sr-only">Sky Home</span>
+                <img class="h-7 w-auto invert" width="174" height="48" src="../assests/img/skyLogo.png" alt=" Logo" />
+            </a>
+            <label for="sideToggle" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-200">
+                <span class="sr-only">Close menu</span>
+                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                    aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"></path>
+                </svg>
+            </label>
+        </div>
+        <div class="mt-6 flow-root flex-fill -mr-4 pr-4">
+            <div class="-my-6 divide-y divide-gray-500/10">
+                <div class="space-y-2 py-6">
+                    <div class="flex flex-col gap-5 items-center">
+                        <div class="flex flex-col w-full gap-y-5">
+                            <a href="./index.html" class="flex items-center gap-x-[2px] text-sm font-bold text-gray-50">
+                                Home
+                            </a>
+                            <a href="./about.html" class="flex items-center gap-x-[2px] text-sm font-bold text-gray-50">
+                                About us
+                            </a>
+                            <a href="./careers.html"
+                                class="flex items-center gap-x-[2px] text-sm font-bold text-gray-50">
+                                Careers
+                            </a>
+                            <a href="./project.html" class="text-sm font-bold text-gray-50">Projects
+                            </a>
+                            <a href="./contact.html" class="text-sm font-bold text-gray-50">Contact
+                                Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="relative">
+        <input type="checkbox" id="dropdown-toggle" class="hidden peer" />
 
         <div
-            class="fixed flex flex-col h-screen inset-y-0 right-0 z-[1011] w-full overflow-y-auto bg-black/80 select-none text-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 peer-checked/sideToggle:translate-x-0 peer-checked/sideToggle:opacity-100 translate-x-full opacity-0 duration-300">
-            <div class="flex items-center justify-between">
-                <a href class="-ml-1.5">
-                    <span class="sr-only">Sky Home</span>
-                    <img class="h-7 w-auto invert" width="174" height="48"
-                        src="../assests/img/skyLogo.png" alt=" Logo" />
-                </a>
-                <label for="sideToggle" type="button"
-                    class="-m-2.5 rounded-md p-2.5 text-gray-200">
-                    <span class="sr-only">Close menu</span>
-                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                        stroke-width="1.5" stroke="currentColor"
-                        aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round"
-                            d="M6 18L18 6M6 6l12 12"></path>
-                    </svg>
-                </label>
-            </div>
-            <div class="mt-6 flow-root flex-fill -mr-4 pr-4">
-                <div class="-my-6 divide-y divide-gray-500/10">
-                    <div class="space-y-2 py-6">
-                        <div class="flex flex-col gap-5 items-center">
-                            <div class="flex flex-col w-full gap-y-5">
-                                <a href="./index.html"
-                                    class="flex items-center gap-x-[2px] text-sm font-bold text-gray-50">
-                                    Home
-                                </a>
-                                <a href="./about.html"
-                                    class="flex items-center gap-x-[2px] text-sm font-bold text-gray-50">
-                                    About us
-                                </a>
-                                <a href="./careers.html"
-                                    class="flex items-center gap-x-[2px] text-sm font-bold text-gray-50">
-                                    Careers
-                                </a>
-                                <a href="./project.html"
-                                    class="text-sm font-bold text-gray-50">Projects
-                                </a>
-                                <a href="./contact.html"
-                                    class="text-sm font-bold text-gray-50">Contact
-                                    Us</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            class="fixed top-14 inset-x-0 z-50 hidden mt-2 origin-top-left  divide-y divide-gray-100 rounded-md shadow-lg peer-checked:block">
+            <div class="relative w-full">
+                <input type="text"
+                    class="subscribe border border-gray-300 border-t-0 border-r-0 border-l-0 text-gray-900 text-sm block w-full pb-1.5 p-2.5 focus:!outline-0 focus:!shadow-none focus:!ring-0 focus:border-gray-400"
+                    placeholder="Search for products, brands and more" required>
             </div>
         </div>
+    </div>
+    <!-- side bar end -->
+</body>
 
-        <div class="relative">
-            <input type="checkbox" id="dropdown-toggle" class="hidden peer" />
-
-            <div
-                class="fixed top-14 inset-x-0 z-50 hidden mt-2 origin-top-left  divide-y divide-gray-100 rounded-md shadow-lg peer-checked:block">
-                <div class="relative w-full">
-                    <input type="text"
-                        class="subscribe border border-gray-300 border-t-0 border-r-0 border-l-0 text-gray-900 text-sm block w-full pb-1.5 p-2.5 focus:!outline-0 focus:!shadow-none focus:!ring-0 focus:border-gray-400"
-                        placeholder="Search for products, brands and more"
-                        required>
-                </div>
-            </div>
-        </div>
-        <!-- side bar end -->
-    </body>
 </html>
