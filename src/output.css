@@ -1461,28 +1461,28 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\.\/assests\/img\/atylumyam01\.jpeg\)\] {
-  background-image: url(./assests/img/atylumyam01.jpeg);
+.bg-\[url\(\.\.\/assests\/img\/atylumyam01\.jpeg\)\] {
+  background-image: url(../assests/img/atylumyam01.jpeg);
 }
 
-.bg-\[url\(\.\/assests\/img\/demo06\.webp\)\] {
-  background-image: url(./assests/img/demo06.webp);
+.bg-\[url\(\.\.\/assests\/img\/demo06\.webp\)\] {
+  background-image: url(../assests/img/demo06.webp);
 }
 
-.bg-\[url\(\.\/assests\/img\/gallary01\.jpg\)\] {
-  background-image: url(./assests/img/gallary01.jpg);
+.bg-\[url\(\.\.\/assests\/img\/gallary01\.jpg\)\] {
+  background-image: url(../assests/img/gallary01.jpg);
 }
 
-.bg-\[url\(\.\/assests\/img\/krishinaCity05\.jpeg\)\] {
-  background-image: url(./assests/img/krishinaCity05.jpeg);
+.bg-\[url\(\.\.\/assests\/img\/krishinaCity05\.jpeg\)\] {
+  background-image: url(../assests/img/krishinaCity05.jpeg);
 }
 
-.bg-\[url\(\.\/assests\/img\/krishinaHome\.jpeg\)\] {
-  background-image: url(./assests/img/krishinaHome.jpeg);
+.bg-\[url\(\.\.\/assests\/img\/krishinaHome\.jpeg\)\] {
+  background-image: url(../assests/img/krishinaHome.jpeg);
 }
 
-.bg-\[url\(\.\/assests\/img\/shreeShyam07\.jpeg\)\] {
-  background-image: url(./assests/img/shreeShyam07.jpeg);
+.bg-\[url\(\.\.\/assests\/img\/shreeShyam07\.jpeg\)\] {
+  background-image: url(../assests/img/shreeShyam07.jpeg);
 }
 
 .bg-\[url\(https\:\/\/images\.pexels\.com\/photos\/4881532\/pexels-photo-4881532\.jpeg\?auto\=compress\&cs\=tinysrgb\&w\=1260\&h\=750\&dpr\=1\)\] {
@@ -1513,28 +1513,16 @@ video {
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
 }
 
-.bg-\[url\(\.\.\/assests\/img\/demo06\.webp\)\] {
-  background-image: url(../assests/img/demo06.webp);
+.bg-\[url\(\.\.\/assests\/img\/atylumyam11\.jpeg\)\] {
+  background-image: url(../assests/img/atylumyam11.jpeg);
 }
 
-.bg-\[url\(\.\.\/assests\/img\/krishinaCity05\.jpeg\)\] {
-  background-image: url(../assests/img/krishinaCity05.jpeg);
+.bg-\[url\(\.\.\/assests\/img\/shreeShyam08\.jpeg\)\] {
+  background-image: url(../assests/img/shreeShyam08.jpeg);
 }
 
-.bg-\[url\(\.\.\/assests\/img\/shreeShyam07\.jpeg\)\] {
-  background-image: url(../assests/img/shreeShyam07.jpeg);
-}
-
-.bg-\[url\(\.\.\/assests\/img\/atylumyam01\.jpeg\)\] {
-  background-image: url(../assests/img/atylumyam01.jpeg);
-}
-
-.bg-\[url\(\.\.\/assests\/img\/gallary01\.jpg\)\] {
-  background-image: url(../assests/img/gallary01.jpg);
-}
-
-.bg-\[url\(\.\.\/assests\/img\/krishinaHome\.jpeg\)\] {
-  background-image: url(../assests/img/krishinaHome.jpeg);
+.bg-\[url\(\.\.\/assests\/img\/gallary02\.jpg\)\] {
+  background-image: url(../assests/img/gallary02.jpg);
 }
 
 .from-gray-200 {
