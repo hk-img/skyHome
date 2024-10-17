@@ -1513,6 +1513,30 @@ video {
   background-image: linear-gradient(to top right, var(--tw-gradient-stops));
 }
 
+.bg-\[url\(\.\/assests\/img\/krishinaCity05\.jpeg\)\] {
+  background-image: url(./assests/img/krishinaCity05.jpeg);
+}
+
+.bg-\[url\(\.\/assests\/img\/shreeShyam07\.jpeg\)\] {
+  background-image: url(./assests/img/shreeShyam07.jpeg);
+}
+
+.bg-\[url\(\.\/assests\/img\/atylumyam01\.jpeg\)\] {
+  background-image: url(./assests/img/atylumyam01.jpeg);
+}
+
+.bg-\[url\(\.\/assests\/img\/demo06\.webp\)\] {
+  background-image: url(./assests/img/demo06.webp);
+}
+
+.bg-\[url\(\.\/assests\/img\/gallary01\.jpg\)\] {
+  background-image: url(./assests/img/gallary01.jpg);
+}
+
+.bg-\[url\(\.\/assests\/img\/krishinaHome\.jpeg\)\] {
+  background-image: url(./assests/img/krishinaHome.jpeg);
+}
+
 .from-gray-200 {
   --tw-gradient-from: #e5e7eb var(--tw-gradient-from-position);
   --tw-gradient-to: rgb(229 231 235 / 0) var(--tw-gradient-to-position);
