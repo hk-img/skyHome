@@ -54,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $mail->Password = 'mqfx inej epdh noyo'; // YOUR email password
 
     $mail->setFrom('nirzkumar15@gmail.com', 'Sky Home');
-    $mail->addAddress('officialskyhomes@gmail.com');
+    $mail->addAddress('nirzkumar15@gmail.com');
     $mail->IsHTML(true);
     $mail->Subject = $subject;
     $mail->Body = $emailBody;
