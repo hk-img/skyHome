@@ -203,7 +203,12 @@
                         </div>
                         
                     </div>
-                    <button type="submit" class="w-1/2 sm:w-[20%] bg-theme2 text-white mt-7 py-2 rounded-lg">Submit</button>
+                    <button type="submit" class="flex items-center gap-2 justify-center w-1/2 sm:w-[20%] bg-theme2 text-white mt-7 py-2 rounded-lg">
+                        Submit
+                        <div class="size-8 loader [&.loading]:block hidden">
+                            <img class="size-full" src="./assests/img/loader.gif" alt="">
+                        </div>
+                    </button>
                 </div>
             </form>
         </div>
@@ -595,6 +600,7 @@
     if (!isValid) {
         return;
     } else {
+        $('.loader').addClass("loading");
         $.ajax({
             url: 'sendmail.php', // Path to your email.php file
             type: 'POST', // Send data using POST method
@@ -623,7 +629,7 @@
                                 );
             }
         });
-        
+        $('.loader').removeClass("loading");
         // this.submit(); // Proceed with form submission
     }
 });
