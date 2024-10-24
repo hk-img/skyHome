@@ -705,10 +705,15 @@
                         contentType: false,
                         processData: false,
                         success: function (response) {
-                            // Handle success (e.g., show success message, redirect, etc.)
-                            Swal.fire(  'Success!','From has been submitted we will get back to you.',
-                                    'success'
-                                );
+                            var resp = JSON.parse(response)
+                            if(resp.success){
+                                Swal.fire(  'Success!','From has been submitted we will get back to you.','success');
+                                document.getElementById("contact-form").reset();
+                            }else{
+                                Swal.fire(  'Error!','Something went wrong.',
+                                                    'error'
+                                                );
+                            }
                         },
                         error: function (xhr, status, error) {
                             // Handle error
@@ -783,10 +788,15 @@
                     type: 'POST',
                     data: formData,
                     success: function (response) {
-                        console.log(response)
-                        Swal.fire(  'Success!','From has been submitted we will get back to you.',
-                                    'success'
-                                );
+                        var resp = JSON.parse(response)
+                        if(resp.success){
+                            Swal.fire(  'Success!','From has been submitted we will get back to you.','success');
+                            document.getElementById("contact-form").reset();
+                        }else{
+                            Swal.fire(  'Error!','Something went wrong.',
+                                                'error'
+                                            );
+                        }
                     },
                     error: function (xhr, status, error) {
                         Swal.fire(  'Error!','Something went wrong.',
