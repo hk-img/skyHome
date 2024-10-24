@@ -620,6 +620,7 @@
                                         'error'
                                     );
                 }
+                $('.loader').removeClass("loading");
             },
             error: function(xhr, status, error) {
                 // Handle error
@@ -629,7 +630,7 @@
                                 );
             }
         });
-        $('.loader').removeClass("loading");
+        
         // this.submit(); // Proceed with form submission
     }
 });
