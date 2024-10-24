@@ -324,6 +324,9 @@
                                         <button type="submit"
                                             class="inline-flex items-center justify-center w-auto px-4 py-2 mt-2 text-base font-semibold text-white transition-all duration-200 bg-slate-900 border border-transparent rounded-md focus:outline-none hover:bg-slate-800 focus:bg-slate-800">
                                             Get in Touch
+                                            <div class="size-8 loader [&.loading]:block hidden">
+                                                <img class="size-full" src="./assests/img/loader.gif" alt="">
+                                            </div>
                                         </button>
                                     </div>
                                 </div>
@@ -397,6 +400,9 @@
                                         <button type="submit"
                                             class="inline-flex items-center justify-center w-auto px-4 py-2 mt-2 text-base font-semibold text-white transition-all duration-200 bg-slate-900 border border-transparent rounded-md focus:outline-none hover:bg-slate-800 focus:bg-slate-800">
                                             Get in Touch
+                                            <div class="size-8 partloader [&.partloading]:block hidden">
+                                                <img class="size-full" src="./assests/img/loader.gif" alt="">
+                                            </div>
                                         </button>
                                     </div>
                                 </div>
@@ -697,7 +703,7 @@
                 // If validation passes, make AJAX request
                 if (isValid) {
                     var formData = new FormData(this); // Create form data
-
+                    $('.loader').addClass("loading");
                     $.ajax({
                         url: 'sendcareermail.php', // Update the URL as needed
                         type: 'POST',
@@ -722,6 +728,7 @@
                                 );
                         }
                     });
+                    $('.loader').removeClass("loading");
                 }
             });
         });
@@ -776,6 +783,7 @@
 
             // If form is valid, send data via AJAX
             if (isValid) {
+                $('.partloader').addClass("partloading");
                 var formData = {
                     partner_fullname: fullname,
                     partner_emailid: email,
@@ -804,6 +812,7 @@
                                 );
                     }
                 });
+                $('.partloader').removeClass("partloading");
             }
         });
 

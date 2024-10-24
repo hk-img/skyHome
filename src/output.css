@@ -938,6 +938,21 @@ video {
   height: 100%;
 }
 
+.size-4 {
+  width: 1rem;
+  height: 1rem;
+}
+
+.size-6 {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.size-8 {
+  width: 2rem;
+  height: 2rem;
+}
+
 .\!h-auto {
   height: auto !important;
 }
@@ -1577,11 +1592,6 @@ video {
 .object-top {
   -o-object-position: top;
      object-position: top;
-}
-
-.object-bottom {
-  -o-object-position: bottom;
-     object-position: bottom;
 }
 
 .p-1 {
@@ -3688,6 +3698,18 @@ video {
     width: 3rem;
     height: 3rem;
   }
+}
+
+.\[\&\.carloading\]\:block.carloading {
+  display: block;
+}
+
+.\[\&\.loading\]\:block.loading {
+  display: block;
+}
+
+.\[\&\.partloading\]\:block.partloading {
+  display: block;
 }
 
 .\[\&_\.swiper-button-next\:after\]\:flex .swiper-button-next:after {
