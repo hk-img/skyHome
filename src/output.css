@@ -632,6 +632,26 @@ video {
   top: 3.5rem;
 }
 
+.right-5 {
+  right: 1.25rem;
+}
+
+.right-8 {
+  right: 2rem;
+}
+
+.top-4 {
+  top: 1rem;
+}
+
+.right-10 {
+  right: 2.5rem;
+}
+
+.right-12 {
+  right: 3rem;
+}
+
 .\!z-10 {
   z-index: 10 !important;
 }
@@ -670,6 +690,14 @@ video {
 
 .z-\[99\] {
   z-index: 99;
+}
+
+.z-\[10000\] {
+  z-index: 10000;
+}
+
+.z-0 {
+  z-index: 0;
 }
 
 .order-1 {
@@ -933,24 +961,19 @@ video {
   height: 1.75rem;
 }
 
+.size-8 {
+  width: 2rem;
+  height: 2rem;
+}
+
 .size-full {
   width: 100%;
   height: 100%;
 }
 
-.size-4 {
-  width: 1rem;
-  height: 1rem;
-}
-
-.size-6 {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-
-.size-8 {
-  width: 2rem;
-  height: 2rem;
+.size-9 {
+  width: 2.25rem;
+  height: 2.25rem;
 }
 
 .\!h-auto {
@@ -1016,6 +1039,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.max-h-dvh {
+  max-height: 100dvh;
 }
 
 .min-h-\[310px\] {
@@ -1149,6 +1176,10 @@ video {
   --tw-scale-x: .95;
   --tw-scale-y: .95;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }
 
 .select-none {
@@ -1490,6 +1521,10 @@ video {
 
 .bg-\[url\(\.\.\/assests\/img\/gallary01\.jpg\)\] {
   background-image: url(../assests/img/gallary01.jpg);
+}
+
+.bg-\[url\(\.\.\/assests\/img\/hillsPlots2\.png\)\] {
+  background-image: url(../assests/img/hillsPlots2.png);
 }
 
 .bg-\[url\(\.\.\/assests\/img\/krishinaCity05\.jpeg\)\] {
@@ -2032,6 +2067,21 @@ video {
 .shadow-white\/20 {
   --tw-shadow-color: rgb(255 255 255 / 0.2);
   --tw-shadow: var(--tw-shadow-colored);
+}
+
+.ring-2 {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+.ring-inset {
+  --tw-ring-inset: inset;
+}
+
+.ring-gray-400 {
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(156 163 175 / var(--tw-ring-opacity));
 }
 
 .invert {
@@ -2851,6 +2901,18 @@ video {
 
 .peer\/sideToggle:checked ~ .peer-checked\/sideToggle\:opacity-100 {
   opacity: 1;
+}
+
+.has-\[input\:checked\]\:block:has(input:checked) {
+  display: block;
+}
+
+.has-\[input\:checked\]\:flex:has(input:checked) {
+  display: flex;
+}
+
+.has-\[input\#leadPopup\:checked\]\:overflow-hidden:has(input#leadPopup:checked) {
+  overflow: hidden;
 }
 
 @media not all and (min-width: 1536px) {
@@ -3698,10 +3760,6 @@ video {
     width: 3rem;
     height: 3rem;
   }
-}
-
-.\[\&\.carloading\]\:block.carloading {
-  display: block;
 }
 
 .\[\&\.loading\]\:block.loading {

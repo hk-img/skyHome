@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./src/output.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/sweetalert2@10'></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="apple-touch-icon" sizes="57x57" href="./assests/img/fevIcon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./assests/img/fevIcon/apple-icon-60x60.png">
@@ -320,12 +322,12 @@
                                         help you every step of the way.
                                     </div>
                                     <div class="pb-1 pt-20" data-aos="zoom-in-right" data-aos-duration="2000">
-                                        <a href="tel:+918000161161"
+                                        <a href="tel:+919529751500"
                                             class="inline-flex items-center gap-3 md:text-lg 2xl:text-2xl  text-sm text-white relative ps-6 2xl:ps-8 3xl:ps-10 2xl:py-3  py-2 pr-6 transition-all duration-500 before:absolute before:border-2 before:border-white md:before:min-w-[42px] 2xl:before:size-12 3xl:before:size-14  before:size-10 before:top-1/2 before:-translate-y-1/2 before:left-0  before:rounded-full before:transition-all before:duration-500 hover:before:min-w-[100%]">
                                             <span>
                                                 <img src="./assests/img/arrow.svg" alt="arrow" class="filter invert" />
                                             </span>
-                                            +91 8000-161-161
+                                            +91 9529751500
                                         </a>
                                     </div>
                                 </div>
@@ -527,7 +529,368 @@
             </div>
         </div>
     </div>
+    <section class="contact-form flex-col items-center fixed inset-0 z-[10000] group/form hidden has-[input:checked]:flex backdrop-blur-xl overflow-y-auto max-h-dvh">
+        <label for="leadPopup" class="absolute inset-0 z-0"></label>
+        <input type="checkbox" id="leadPopup" class="hidden" />
+        <div class="grow py-2"></div>
+        <div class="mx-auto px-6 lg:px-8 w-full max-w-6xl relative">
+            <form action="" id="contact-form-modal">
+                <label for="leadPopup" class="absolute top-4 right-12 size-9 cursor-pointer rounded-full z-0 font-bold text-xl ring-2 ring-inset ring-gray-400 flex items-center justify-center">X</label>
+            <div
+                class="size-full rounded-xl bg-white p-4 sm:p-10 md:p-20 [box-shadow:0_4px_25px_0_rgba(0,_0,_0,_.06)] bg-no-repeat bg-contain  bg-bottom bg-[url(https://www.hyperlinkinfosystem.com/assets/img/contact-us.png)]">
+                <div class="pb-5 text-3xl font-semibold text-theme1">
+                    Connect With Us
+                </div>
+                <div class="grid grid-cols-12 gap-6  ">
+                        <div class="col-span-12 sm:col-span-6 ">
+                            <div class="size-full px-4 py-2 border flex items-start gap-3">
+                                <div class="flex justify-center flex-col h-full *:size-6">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512"
+                                        height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm95.8 32.6L272 480l-32-136 32-56h-96l32 56-32 136-47.8-191.4C56.9 292 0 350.3 0 422.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-41.6c0-72.1-56.9-130.4-128.2-133.8z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="w-full">
+                                    <label for="fullName" class="leading-8 ps-1">Full Name <span
+                                            class="text-red-500">*</span></label>
+                                    <input id="fullNameModal" type="text" placeholder=" Enter Full Name"
+                                        class="w-full focus-visible:outline-0 focus-visible:border-0">
+                                </div>
+                            </div>
+                            <div>
+                                <span class="err-fullnameModal text-red-500 text-sm">  </span>
+                            </div>
+                        </div>
+                        <div class="col-span-12 sm:col-span-6 ">
+                            <div class="size-full px-4 py-2 border flex items-start gap-3">
+                                <div class="flex justify-center flex-col h-full *:size-6">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                        height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                        <path
+                                            d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="w-full">
+                                    <label for="E-mail" class="leading-8 ps-1">E-mail</label>
+                                    <input type="text" id="emailidModal" placeholder=" Enter E-mail"
+                                        class="w-full focus-visible:outline-0 focus-visible:border-0">
+                                </div>
+                            </div>
+                            <div>
+                                <span class="err-emailidModal text-red-500 text-sm">  </span>
+                            </div>
+                        </div>
+                        <div class="col-span-12 sm:col-span-6 ">
+                            <div class="size-full px-4 py-2 border flex items-start gap-3">
+                                <div class="flex justify-center flex-col h-full *:size-6">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512"
+                                        height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M280 0C408.1 0 512 103.9 512 232c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-101.6-82.4-184-184-184c-13.3 0-24-10.7-24-24s10.7-24 24-24zm8 192a32 32 0 1 1 0 64 32 32 0 1 1 0-64zm-32-72c0-13.3 10.7-24 24-24c75.1 0 136 60.9 136 136c0 13.3-10.7 24-24 24s-24-10.7-24-24c0-48.6-39.4-88-88-88c-13.3 0-24-10.7-24-24zM117.5 1.4c19.4-5.3 39.7 4.6 47.4 23.2l40 96c6.8 16.3 2.1 35.2-11.6 46.3L144 207.3c33.3 70.4 90.3 127.4 160.7 160.7L345 318.7c11.2-13.7 30-18.4 46.3-11.6l96 40c18.6 7.7 28.5 28 23.2 47.4l-24 88C481.8 499.9 466 512 448 512C200.6 512 0 311.4 0 64C0 46 12.1 30.2 29.5 25.4l88-24z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="w-full">
+                                    <label for="Contact" class="leading-8 ps-1">Mobile No <span
+                                            class="text-red-500">*</span></label>
+                                    <input type="tel" id="mobilenumberModal" placeholder=" Enter Mobile No."
+                                        class="w-full focus-visible:outline-0 focus-visible:border-0">
+                                </div>
+                            </div>
+                            <div>
+                                <span class="err-mobilenumberModal text-red-500 text-sm">  </span>
+                            </div>
+                        </div>
+                        <div class="col-span-12 ">
+                            <div class="size-full px-4 py-2 border flex items-start gap-3">
+                                <div class="flex justify-center flex-col h-full *:size-7 ">
+                                    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24"
+                                        height="100%" width="100%" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M20 2H4c-1.103 0-2 .894-2 1.992v12.016C2 17.106 2.897 18 4 18h3v4l6.351-4H20c1.103 0 2-.894 2-1.992V3.992A1.998 1.998 0 0 0 20 2zm-3 9h-4v4h-2v-4H7V9h4V5h2v4h4v2z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="w-full">
+                                    <label for="Message" class="leading-8 ps-1">Message</label>
+                                    <textarea name id="messageModal"
+                                        class="w-full focus-visible:outline-0 focus-visible:border-0" rows="2" id
+                                        placeholder="Your Message"></textarea>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="err-messageModal text-red-500 text-sm">  </span>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <button type="submit" class="flex items-center gap-2 justify-center w-1/2 sm:w-[20%] bg-theme2 text-white mt-7 py-2 rounded-lg">
+                        Submit
+                        <div class="size-8 loader [&.loading]:block hidden">
+                            <img class="size-full" src="./assests/img/loader.gif" alt="">
+                        </div>
+                    </button>
+                </div>
+            </form>
+        </div>
+        <div class="grow py-2"></div>
+    </section>
+    <script>
+        
+        document.addEventListener("DOMContentLoaded", function () {
+
+        const checkbox = document.getElementById("leadPopup");
+
+        const leadformsubmit = sessionStorage.getItem("leadformsubmit");
+        if(leadformsubmit && leadformsubmit=='done'){
+            return false;
+        }
+        // Function to set checkbox as checked
+        const setCheckboxChecked = () => {
+            checkbox.checked = true;
+            sessionStorage.setItem("lastCheckedTime", Date.now()); // Update last checked time
+        };
+
+        // Function to start monitoring the checkbox
+        const startMonitoring = () => {
+            const intervalId = setInterval(() => {
+                const lastCheckedTime = sessionStorage.getItem("lastCheckedTime");
+                const currentTime = Date.now();
+                const timeElapsed = currentTime - lastCheckedTime;
+
+                // Check if 1 minute (60000 ms) has passed since the last uncheck
+                if (timeElapsed >= 60000) {
+                    setCheckboxChecked();
+                }
+            }, 1000); // Check every second for precision
+            sessionStorage.setItem("monitorIntervalId", intervalId); // Store interval ID
+        };
+
+        // Event listener for checkbox changes
+        checkbox.addEventListener("change", () => {
+            if (!checkbox.checked) {
+                sessionStorage.setItem("lastCheckedTime", Date.now()); // Record the time when unchecked
+            }
+        });
+
+        // Initial 10-second timer for the first-time visitor
+        const initializeCheckbox = () => {
+            if (!sessionStorage.getItem("lastCheckedTime")) {
+                // First time user, start the 10-second timer
+                setTimeout(() => {
+                    setCheckboxChecked();
+                    startMonitoring();
+                }, 10000);
+            } else {
+                // Returning user, calculate remaining time if page was refreshed
+                const lastCheckedTime = sessionStorage.getItem("lastCheckedTime");
+                const timeElapsed = Date.now() - lastCheckedTime;
+
+                if (timeElapsed >= 60000) {
+                    setCheckboxChecked();
+                    startMonitoring();
+                } else {
+                    // Wait for the remaining time before re-checking
+                    const remainingTime = 60000 - timeElapsed;
+                    setTimeout(() => {
+                        setCheckboxChecked();
+                        startMonitoring();
+                    }, remainingTime);
+                }
+            }
+        };
+
+        initializeCheckbox();
+        });
+    </script>
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Get form values
+            let fullName = document.getElementById("fullName").value.trim();
+            let email = document.getElementById("emailid").value.trim();
+            let mobile = document.getElementById("mobilenumber").value.trim();
+            let message = document.getElementById("message").value.trim();
+            
+            // Clear previous error messages
+            document.querySelector(".err-fullname").textContent = "";
+            document.querySelector(".err-emailid").textContent = "";
+            document.querySelector(".err-mobilenumber").textContent = "";
+            document.querySelector(".err-message").textContent = "";
+
+            let isValid = true;
+
+            // Validate Full Name
+            if (fullName === "") {
+                document.querySelector(".err-fullname").textContent = "Full Name is required.";
+                isValid = false;
+            }
+
+            // Validate Mobile No (assume 10-digit format)
+            let mobilePattern = /^[0-9]{10}$/;
+            if (mobile === "") {
+                document.querySelector(".err-mobilenumber").textContent = "Mobile No is required.";
+                isValid = false;
+            } else if (!mobilePattern.test(mobile)) {
+                document.querySelector(".err-mobilenumber").textContent = "Please enter a valid 10-digit Mobile No.";
+                isValid = false;
+            }
+
+            // Validate E-mail (if provided)
+            if (email === "") {
+                document.querySelector(".err-emailid").textContent = "Email address is required.";
+                isValid = false;
+            } else {
+                let emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+                if (!emailPattern.test(email)) {
+                    document.querySelector(".err-emailid").textContent = "Please enter a valid E-mail address.";
+                    isValid = false;
+                }
+            }
+
+            // Validate Message
+            if (message === "") {
+                document.querySelector(".err-message").textContent = "Message is required.";
+                isValid = false;
+            }
+
+            // If validation failed, do not submit
+            if (!isValid) {
+                return;
+            } else {
+                $('.loader').addClass("loading");
+                $.ajax({
+                    url: 'sendmail.php', // Path to your email.php file
+                    type: 'POST', // Send data using POST method
+                    data: {
+                        fullName: fullName,
+                        email: email,
+                        mobile: mobile,
+                        message: message
+                    },
+                    success: function(response) {
+                        var resp = JSON.parse(response)
+                        if(resp.success){
+                            Swal.fire(  'Success!','From has been submitted we will get back to you.','success');
+                            document.getElementById("contact-form").reset();
+                        }else{
+                            Swal.fire(  'Error!','Something went wrong.',
+                                                'error'
+                                            );
+                        }
+                        $('.loader').removeClass("loading");
+                    },
+                    error: function(xhr, status, error) {
+                        // Handle error
+                        console.error("Form submission failed:", error);
+                        Swal.fire(  'Error!','Something went wrong.',
+                                            'error'
+                                        );
+                    }
+                });
+                
+                // this.submit(); // Proceed with form submission
+            }
+        });
+    </script>
     <!-- side bar end -->
+    <script>
+        document.getElementById("contact-form-modal").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+    
+            // Get form values
+            let fullName = document.getElementById("fullNameModal").value.trim();
+            let email = document.getElementById("emailidModal").value.trim();
+            let mobile = document.getElementById("mobilenumberModal").value.trim();
+            let message = document.getElementById("messageModal").value.trim();
+            
+            // Clear previous error messages
+            document.querySelector(".err-fullnameModal").textContent = "";
+            document.querySelector(".err-emailidModal").textContent = "";
+            document.querySelector(".err-mobilenumberModal").textContent = "";
+            document.querySelector(".err-messageModal").textContent = "";
+    
+            let isValid = true;
+    
+            // Validate Full Name
+            if (fullName === "") {
+                document.querySelector(".err-fullnameModal").textContent = "Full Name is required.";
+                isValid = false;
+            }
+    
+            // Validate Mobile No (assume 10-digit format)
+            let mobilePattern = /^[0-9]{10}$/;
+            if (mobile === "") {
+                document.querySelector(".err-mobilenumberModal").textContent = "Mobile No is required.";
+                isValid = false;
+            } else if (!mobilePattern.test(mobile)) {
+                document.querySelector(".err-mobilenumberModal").textContent = "Please enter a valid 10-digit Mobile No.";
+                isValid = false;
+            }
+    
+            // Validate E-mail (if provided)
+            if (email === "") {
+                document.querySelector(".err-emailidModal").textContent = "Email address is required.";
+                isValid = false;
+            } else {
+                let emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+                if (!emailPattern.test(email)) {
+                    document.querySelector(".err-emailidModal").textContent = "Please enter a valid E-mail address.";
+                    isValid = false;
+                }
+            }
+    
+            // Validate Message
+            if (message === "") {
+                document.querySelector(".err-messageModal").textContent = "Message is required.";
+                isValid = false;
+            }
+    
+            // If validation failed, do not submit
+            if (!isValid) {
+                return;
+            } else {
+                $('.loader').addClass("loading");
+                $.ajax({
+                    url: 'sendmail.php', // Path to your email.php file
+                    type: 'POST', // Send data using POST method
+                    data: {
+                        fullName: fullName,
+                        email: email,
+                        mobile: mobile,
+                        message: message
+                    },
+                    success: function(response) {
+                        var resp = JSON.parse(response)
+                        if(resp.success){
+                            Swal.fire(  'Success!','From has been submitted we will get back to you.','success');
+                            document.getElementById("contact-form-modal").reset();
+                        }else{
+                            Swal.fire(  'Error!','Something went wrong.',
+                                                'error'
+                                            );
+                        }
+                        $('.loader').removeClass("loading");
+                        document.getElementById("leadPopup").checked = false;
+                    },
+                    error: function(xhr, status, error) {
+                        // Handle error
+                        console.error("Form submission failed:", error);
+                        Swal.fire(  'Error!','Something went wrong.',
+                                            'error'
+                                        );
+                    }
+                });
+                
+                // this.submit(); // Proceed with form submission
+            }
+        });
+    </script>
 </body>
 
 </html>
